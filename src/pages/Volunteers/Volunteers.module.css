@@ -1,0 +1,335 @@
+.volunteersSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #0B1116 0%, #111827 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem); /* Reduced from clamp(2.5rem, 5vw, 4rem) */
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-shadow: 0 4px 20px rgba(255, 153, 0, 0.3);
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem); /* Reduced from clamp(1.125rem, 2.5vw, 1.5rem) */
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Volunteers Grid */
+.volunteersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Volunteer Card */
+.volunteerCard {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(35, 47, 62, 0.9));
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.volunteerCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FF9900, #E88C00, #FF9900);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.volunteerCard:hover::before {
+  transform: scaleX(1);
+}
+
+.volunteerCard:hover {
+  border-color: rgba(255, 153, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Header */
+.cardHeader {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 153, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.2);
+}
+
+.volunteerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.volunteerCard:hover .volunteerImage {
+  transform: scale(1.1);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.1), rgba(83, 159, 229, 0.1));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.volunteerCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialLink:hover {
+  background: var(--color-accent);
+  color: #0B1116;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 153, 0, 0.3);
+}
+
+/* Card Content */
+.cardContent {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.volunteerName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.volunteerDesignation {
+  font-size: 1.125rem;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.volunteerCompany {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Card Footer */
+.cardFooter {
+  text-align: center;
+}
+
+.connectButton {
+  background: linear-gradient(135deg, #FF9900, #E88C00);
+  color: #0B1116;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.connectButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 153, 0, 0.4);
+}
+
+/* Join Section */
+.joinSection {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(35, 47, 62, 0.3), rgba(17, 24, 39, 0.3));
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.joinTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.joinText {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.joinButton {
+  background: linear-gradient(135deg, #FF9900, #E88C00);
+  color: #0B1116;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.joinButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(255, 153, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .volunteersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteersSection {
+    padding: 4rem 1rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .volunteersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .volunteerCard {
+    padding: 1.5rem;
+  }
+
+  .imageContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .joinSection {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .volunteersSection {
+    padding: 3rem 1rem;
+  }
+
+  .volunteersGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .volunteerCard {
+    padding: 1.25rem;
+  }
+
+  .imageContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .volunteerName {
+    font-size: 1.25rem;
+  }
+
+  .volunteerDesignation {
+    font-size: 1rem;
+  }
+
+  .socialLinks {
+    gap: 0.75rem;
+  }
+
+  .socialLink {
+    width: 36px;
+    height: 36px;
+  }
+
+  .joinSection {
+    padding: 1.5rem 1rem;
+  }
+}
+
+

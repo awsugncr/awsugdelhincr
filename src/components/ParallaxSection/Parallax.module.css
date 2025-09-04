@@ -1,0 +1,107 @@
+.parallaxSection {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../assets/aws5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 14, 26, 0.7);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Reduced from clamp(2rem, 5vw, 3.5rem) */
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 1px;
+    font-style: italic;
+    position: relative;
+}
+
+.openQuote,
+.closeQuote {
+    font-size: clamp(2.2rem, 6vw, 3.5rem); /* Reduced from clamp(3rem, 8vw, 5rem) */
+    font-weight: 700;
+    color: #ff9900;
+    font-style: normal;
+    line-height: 0.8;
+}
+
+.openQuote {
+    position: relative;
+    top: 0.2em;
+    margin-right: 0.1em;
+}
+
+.closeQuote {
+    position: relative;
+    top: 0.2em;
+    margin-left: 0.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallaxSection {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+
+    .content {
+        padding: 0 15px;
+    }
+
+    .quote {
+        font-size: clamp(1.3rem, 5vw, 2rem); /* Reduced from clamp(1.5rem, 6vw, 2.5rem) */
+    }
+    
+    .openQuote,
+    .closeQuote {
+        font-size: clamp(2rem, 7vw, 3rem); /* Reduced from clamp(2.5rem, 9vw, 4rem) */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallaxSection {
+        height: 50vh;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .quote {
+        font-size: clamp(1.1rem, 6vw, 1.5rem); /* Reduced from clamp(1.3rem, 7vw, 2rem) */
+        letter-spacing: 0.5px;
+    }
+    
+    .openQuote,
+    .closeQuote {
+        font-size: clamp(1.8rem, 8vw, 2.5rem); /* Reduced from clamp(2rem, 10vw, 3rem) */
+    }
+}
+  

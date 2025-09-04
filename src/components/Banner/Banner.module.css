@@ -1,0 +1,69 @@
+.section {
+  padding: clamp(40px, 8vw, 60px) clamp(15px, 4vw, 20px);
+  min-height: clamp(50vh, 60vh, 60vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0e1a;
+}
+
+.bannerContainer {
+  width: clamp(85%, 90%, 90%);
+  max-width: 1200px;
+  border-radius: clamp(12px, 3vw, 16px);
+  background: rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bannerHeading {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  padding: clamp(15px, 4vw, 30px);
+  color: #ff9900;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bannerContent {
+  padding: clamp(30px, 6vw, 40px) clamp(20px, 4vw, 30px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: clamp(25px, 5vw, 40px);
+  text-align: center;
+  color: #e2e8f0;
+}
+
+.bannerContent h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: #ffffff;
+  margin-bottom: clamp(8px, 2vw, 10px);
+  font-weight: 800;
+}
+
+.bannerContent p {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: #cbd5e1;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.5px, 0.2vw, 1px);
+}
+
+@media screen and (max-width: 768px) {
+  .bannerContent {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bannerContainer {
+    width: 95%;
+  }
+}
