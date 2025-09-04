@@ -1,0 +1,272 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  bottom: 20px; /* Move to bottom with space */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Perfect center alignment */
+  width: auto; /* Auto width based on content */
+  max-width: 900px; /* Larger max width to fit all nav links properly */
+  min-width: 700px; /* Minimum width to ensure links fit comfortably */
+  padding: 18px 40px; /* Proper padding for nav links */
+  background: rgba(255, 255, 255, 0.08); /* Glassmorphism background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(20px) saturate(180%); /* Safari support */
+  backdrop-filter: blur(20px) saturate(180%); /* Enhanced glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.12); /* Subtle border */
+  border-radius: 20px; /* Curved corners */
+  box-shadow: 
+    0 -8px 32px rgba(0, 0, 0, 0.1),
+    0 -4px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(255, 153, 0, 0.05); /* Subtle orange glow */
+  z-index: 100;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.header:hover {
+  background: rgba(255, 255, 255, 0.12); /* Slightly more opaque on hover */
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 0 1px rgba(255, 153, 0, 0.1),
+    0 0 30px rgba(255, 153, 0, 0.05); /* Enhanced glow on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Logo */
+.logo {
+  color: var(--color-text-light);
+  font-size: 28px; /* Slightly larger */
+  text-decoration: none;
+  font-weight: 700; /* Bolder */
+  cursor: pointer;
+}
+
+.UGLogo{
+  width: 100px; /* Slightly smaller logo */
+  height: 50px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.navbar a {
+  color: var(--color-text-light);
+  font-size: 17px; /* Slightly smaller font */
+  text-decoration: none;
+  margin-left: 40px; /* Increased margin */
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px; /* Adjusted position */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent); /* AWS Orange underline */
+  border-radius: 1px;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: var(--color-accent); /* Accent color on hover */
+  transform: translateY(-1px); /* Subtle lift */
+}
+
+.navbar a:hover::before {
+  opacity: 1;
+}
+
+.navbar a:hover::after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+/* Active Link */
+.navbar a.active {
+  color: var(--color-accent); /* Accent color for active link */
+  font-weight: 600;
+}
+
+.navbar a.active::before {
+  opacity: 1;
+  background: rgba(255, 153, 0, 0.1);
+}
+
+.navbar a.active::after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+/* Join Us Button */
+.joinUs {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.9), rgba(232, 140, 0, 0.9));
+  color: white;
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 6px 20px rgba(255, 153, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.joinUs:hover {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 1), rgba(232, 140, 0, 1));
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 10px 28px rgba(255, 153, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 153, 0, 0.5);
+}
+
+/* Desktop and Mobile Join Us Button Visibility */
+.mobileJoinUs {
+  display: none;
+}
+
+.desktopJoinUs {
+  display: block;
+}
+
+/* Menu Icon */
+.menuIcon {
+  font-size: 36px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .header {
+    padding: 15px 20px;
+    bottom: 10px; /* Reduced bottom spacing on mobile */
+    left: 10px; /* Back to full width on mobile */
+    right: 10px;
+    width: calc(100% - 20px);
+    min-width: unset; /* Remove min-width constraint on mobile */
+    max-width: unset; /* Remove max-width constraint on mobile */
+    transform: none; /* Remove transform centering on mobile */
+    border-radius: 16px; /* Slightly less rounded on mobile */
+  }
+
+  .UGLogo{
+    width: 80px; /* Smaller logo on mobile */
+    height: 40px;
+  }
+
+  .navbar {
+    position: absolute;
+    bottom: calc(100% + 10px); /* Position above the bottom navbar */
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08); /* Match header glassmorphism */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px; /* Curved mobile menu */
+    box-shadow: 
+      0 -8px 32px rgba(0, 0, 0, 0.15),
+      0 -4px 16px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    display: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .navbar.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .navbar a {
+    margin: 12px 0;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+  }
+
+  .joinUs{
+    margin: 16px 0 0 0;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .mobileJoinUs {
+    display: block;
+  }
+
+  .desktopJoinUs {
+    display: none;
+  }
+}
+
+/* Background Overlay */
+.nav-bg {
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  height: 295px;
+  background: rgba(35, 47, 62, 0.95);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.nav-bg.active {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,326 @@
+/* Header section styling - matching CFS layout */
+.header {
+  margin-bottom: clamp(30px, 6vw, 50px);
+  text-align: center;
+}
+
+.eventsDescription {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #cbd5e1;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Match CFS pageHeader padding for better spacing */
+.pageHeader {
+  padding: clamp(16px, 4vw, 24px) clamp(16px, 6vw, 40px);
+  background: var(--color-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.pageHeader::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: clamp(16px, 6vw, 40px);
+  right: clamp(16px, 6vw, 40px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(6px, 1.5vw, 8px);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-text-light);
+  padding: clamp(8px, 2vw, 10px) clamp(14px, 3vw, 20px);
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: var(--color-accent);
+}
+
+.backButton svg {
+  font-size: clamp(0.75rem, 1.8vw, 0.85rem);
+}
+
+.allEventsPage {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(30px, 8vw, 60px) clamp(10px, 4vw, 20px) clamp(50px, 10vw, 80px);
+}
+
+/* Remove duplicate eventsHero since we're using .header now */
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  gap: clamp(20px, 4vw, 30px);
+}
+
+/* Event Card Styles - Same as home page but responsive */
+.eventCard {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: clamp(12px, 2.5vw, 16px);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  height: clamp(240px, 35vw, 280px);
+}
+
+.eventCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.eventImage {
+  flex: 0 0 45%;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+.eventImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.eventCard:hover .eventImage img {
+  transform: scale(1.1);
+}
+
+.statusBadge {
+  position: absolute;
+  top: clamp(10px, 2vw, 15px);
+  left: clamp(10px, 2vw, 15px);
+  padding: clamp(4px, 1vw, 6px) clamp(8px, 1.5vw, 12px);
+  border-radius: clamp(15px, 3vw, 20px);
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.statusBadge.completed {
+  background: rgba(34, 197, 94, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.statusBadge.upcoming {
+  background: rgba(59, 130, 246, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.eventContent {
+  flex: 1;
+  padding: clamp(18px, 3.5vw, 25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(12px, 2.5vw, 16px);
+}
+
+.eventHeader {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.2vw, 8px);
+}
+
+.eventTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  color: var(--color-text-light);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.eventType {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.2vw, 8px);
+  flex: 1;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 1.2vw, 8px);
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.75rem, 1.7vw, 0.85rem);
+  color: var(--color-text-muted);
+}
+
+.detailItem .icon {
+  color: var(--color-accent);
+  font-size: clamp(0.8rem, 1.7vw, 0.9rem);
+  flex-shrink: 0;
+}
+
+.eventFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: clamp(12px, 2.5vw, 16px);
+  border-top: 1px solid rgba(255, 153, 0, 0.1);
+  position: relative;
+  min-height: clamp(40px, 6vw, 48px);
+}
+
+.attendees {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.75rem, 1.7vw, 0.85rem);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.eventLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(35px, 5vw, 40px);
+  height: clamp(35px, 5vw, 40px);
+  background: linear-gradient(135deg, var(--color-accent), #e68a00);
+  color: var(--color-ink);
+  border-radius: clamp(8px, 1.5vw, 10px);
+  transition: all 0.3s ease;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: clamp(10px, 2vw, 12px);
+}
+
+.eventLink:hover {
+  background: linear-gradient(135deg, #e68a00, #cc7700);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+  .allEventsPage {
+    padding: clamp(50px, 8vw, 60px) clamp(12px, 2.5vw, 15px) clamp(25px, 4vw, 30px);
+  }
+  
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .eventCard {
+    flex-direction: column;
+    height: auto;
+    min-height: clamp(300px, 40vw, 320px);
+  }
+  
+  .eventImage {
+    flex: none;
+    height: clamp(140px, 22vw, 180px);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  
+  .eventContent {
+    padding: clamp(16px, 3vw, 20px);
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .allEventsPage {
+    padding: clamp(40px, 6vw, 50px) clamp(8px, 2vw, 10px) clamp(20px, 3vw, 25px);
+  }
+  
+  .header {
+    margin-bottom: clamp(25px, 4vw, 30px);
+  }
+  
+  .eventCard {
+    min-height: clamp(260px, 35vw, 280px);
+  }
+  
+  .eventImage {
+    height: clamp(120px, 18vw, 140px);
+  }
+}
+
+/* Large screens optimization */
+@media (min-width: 1200px) {
+  .eventsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1600px) {
+  .eventsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1400px;
+  }
+  
+  .eventCard {
+    height: 300px;
+  }
+}
+
+/* Hover effects disabled on touch devices */
+@media (hover: none) {
+  .eventCard:hover {
+    transform: none;
+  }
+  
+  .eventCard:hover .eventImage img {
+    transform: none;
+  }
+  
+  .eventLink:hover {
+    transform: none;
+  }
+  
+  .viewAllButton:hover {
+    transform: none;
+  }
+}
