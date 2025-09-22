@@ -1,0 +1,315 @@
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundIllustration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/delhi/illus1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.backgroundIllustration::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+
+.floatingIcons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.floatingIcon {
+  position: absolute;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0.6;
+}
+
+.awsServiceIcon {
+  width: clamp(24px, 4vw, 48px);
+  height: clamp(24px, 4vw, 48px);
+  filter: drop-shadow(0 4px 12px rgba(255, 153, 0, 0.2)) brightness(0.85) saturate(0.8);
+  transition: all 0.3s ease;
+}
+
+.floatingIcon:hover .awsServiceIcon {
+  filter: drop-shadow(0 6px 20px rgba(255, 153, 0, 0.4)) brightness(1) saturate(1);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.textContent {
+  position: relative;
+  z-index: 5;
+  color: white;
+  text-align: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: clamp(300px, 90vw, 1200px);
+}
+
+.titleContainer {
+  margin-bottom: clamp(1rem, 4vw, 2rem);
+}
+
+.mainTitle {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 clamp(0.5rem, 2vw, 1rem) 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+}
+
+.titleHighlight {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(135deg, #FF9900 0%, #FFB84D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto clamp(1.5rem, 5vw, 3rem) auto;
+  max-width: clamp(280px, 80vw, 600px);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.ctaContainer {
+  display: flex;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton, .secondaryButton {
+  padding: clamp(0.7rem, 2vw, 1rem) clamp(1.25rem, 4vw, 2rem);
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  font-weight: 600;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  min-width: clamp(140px, 25vw, 160px);
+  text-align: center;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #FF9900 0%, #E88C00 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+  border: none;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(135deg, #FFB84D 0%, #FF9900 100%);
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 153, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.wavesContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -7px;
+}
+
+.parallax > use {
+  animation: moveForever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes moveForever {
+  0% {
+    transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .textContent {
+    padding: 0 1.5rem;
+  }
+  
+  .awsServiceIcon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textContent {
+    padding: 0 1rem;
+  }
+  
+  .titleContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    margin-bottom: 2rem;
+  }
+  
+  .ctaContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .ctaButton, .secondaryButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.875rem 1.5rem;
+  }
+  
+  .awsServiceIcon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .wavesContainer {
+    height: 60px;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textContent {
+    padding: 0 1rem;
+  }
+  
+  .titleContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ctaButton, .secondaryButton {
+    max-width: 280px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .awsServiceIcon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .floatingIcon {
+    opacity: 0.7;
+  }
+  
+  .wavesContainer {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .textContent {
+    padding: 0 0.5rem;
+  }
+  
+  .ctaButton, .secondaryButton {
+    max-width: 260px;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .awsServiceIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

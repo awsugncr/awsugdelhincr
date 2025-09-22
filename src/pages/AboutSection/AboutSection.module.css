@@ -1,0 +1,201 @@
+.aboutSection {
+  min-height: 100vh;
+  padding: clamp(50px, 8vw, 80px) clamp(10px, 3vw, 20px) clamp(40px, 6vw, 80px);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: clamp(320px, 90vw, 1600px);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(50px, 8vw, 80px);
+}
+
+.subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(14px, 4vw, 22px);
+  color: #94a3b8;
+  margin-top: 20px;
+  max-width: clamp(300px, 80vw, 700px);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(25px, 5vw, 60px);
+  margin-top: 20px;
+}
+
+.missionSection,
+.offeringsSection {
+  position: relative;
+  padding: 0;
+  border-radius: clamp(12px, 2vw, 16px);
+  overflow: hidden;
+  min-height: clamp(320px, 40vh, 450px);
+  display: flex;
+  align-items: stretch;
+  transition: transform 0.3s ease;
+}
+
+.missionSection:hover,
+.offeringsSection:hover {
+  transform: translateY(-4px);
+}
+
+.missionSection {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ), url('../../assets/delhi/india gate.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: contrast(0.9) brightness(0.85);
+}
+
+.offeringsSection {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ), url('../../assets/delhi/red fort.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: contrast(0.9) brightness(0.85);
+}
+
+.missionSection::before,
+.offeringsSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.45) 70%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  padding: clamp(20px, 5vw, 70px);
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.missionSection h3,
+.offeringsSection h3 {
+  color: #ffffff;
+  font-size: clamp(18px, 5vw, 32px);
+  font-weight: 600;
+  margin-bottom: clamp(16px, 3vw, 24px);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.missionSection p,
+.offeringsSection p {
+  color: #e2e8f0;
+  font-size: clamp(13px, 3.5vw, 18px);
+  line-height: clamp(1.5, 4vw, 1.7);
+  font-family: 'Lato', sans-serif;
+  margin-bottom: clamp(14px, 3vw, 16px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.missionSection p:last-child,
+.offeringsSection p:last-child {
+  margin-bottom: 0;
+}
+
+.offeringsList {
+  list-style: none;
+  padding: 0;
+  margin: clamp(16px, 3vw, 20px) 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.offeringsList li {
+  color: #e2e8f0;
+  font-size: clamp(13px, 3.5vw, 18px);
+  line-height: clamp(1.5, 4vw, 1.7);
+  font-family: 'Lato', sans-serif;
+  margin-bottom: clamp(10px, 2.5vw, 12px);
+  padding-left: clamp(18px, 4vw, 20px);
+  position: relative;
+}
+
+.offeringsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #ff9900;
+  font-weight: 600;
+  font-size: clamp(16px, 4vw, 18px);
+}
+
+/* Reduced media queries - clamp handles most responsive behavior */
+
+/* Large Desktop Screens - fine-tuning for very large screens */
+@media (min-width: 1400px) {
+  .missionSection,
+  .offeringsSection {
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+/* Mobile optimization for layout changes */
+@media (max-width: 768px) {
+  .missionSection,
+  .offeringsSection {
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+  .missionSection::before,
+  .offeringsSection::before {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+  }
+  
+  .contentWrapper {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Very small screens - minimal adjustments */
+@media (max-width: 360px) {
+  .aboutSection {
+    min-height: auto;
+  }
+}
