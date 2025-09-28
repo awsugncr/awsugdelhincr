@@ -1,12 +1,12 @@
-import aws1 from "../assets/events/wit_2025/aws1.JPG";
-import aws2 from "../assets/events/wit_2025/aws2.JPG";
-import aws3 from "../assets/events/wit_2025/aws3.JPG";
-import aws4 from "../assets/events/wit_2025/aws4.JPG";
-import aws5 from "../assets/events/wit_2025/aws5.JPG";
-import aws6 from "../assets/events/wit_2025/aws6.JPG";
-import aws7 from "../assets/events/wit_2025/aws7.JPG";
-import aws8 from "../assets/events/wit_2025/aws8.JPG";
-import aws9 from "../assets/events/wit_2025/aws9.JPG";
+import aws1 from "../assets/events/wit_2025/aws1.jpg";
+import aws2 from "../assets/events/wit_2025/aws2.jpg";
+import aws3 from "../assets/events/wit_2025/aws3.jpg";
+import aws4 from "../assets/events/wit_2025/aws4.jpg";
+import aws5 from "../assets/events/wit_2025/aws5.jpg";
+import aws6 from "../assets/events/wit_2025/aws6.jpg";
+import aws7 from "../assets/events/wit_2025/aws7.jpg";
+import aws8 from "../assets/events/wit_2025/aws8.jpg";
+import aws9 from "../assets/events/wit_2025/aws9.jpg";
 import aws10 from "../assets/events/wit_2025/aws10.jpg";
 
 export const witData = {
