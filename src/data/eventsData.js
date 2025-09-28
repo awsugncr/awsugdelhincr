@@ -5,7 +5,7 @@ import awsAstuteDev from "../assets/events/astute_dev_with_Q/aws9.jpeg";
 import ACD2024 from "../assets/events/ACD 2024/image22.jpg";
 import awsGamedayGenAI from "../assets/events/gameday_2025/aws8.jpg";
 import innovateFaster from "../assets/events/innovatefaster/1697304577122.jpg";
-import awsWIT2025 from "../assets/events/wit_2025/aws13.JPG";
+import awsWIT2025 from "../assets/events/wit_2025/aws13.jpg";
 import awsAgenticAI from "../assets/events/Agentic_AI_with_AWS/aws1.jpg";
 import acd2025Poster from "../assets/events/ACD_2025/ACD_2025_POSTER.jpeg";
 import awsReimaginingCLIProductivity from "../assets/events/Reimagining_CLI_Productivity/aws1.jpg";
