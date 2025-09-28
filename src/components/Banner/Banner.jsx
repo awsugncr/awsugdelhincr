@@ -1,4 +1,4 @@
-import styles from './Banner.module.css';
+import styles from "./Banner.module.css";
 
 const Banner = () => {
   return (
@@ -7,15 +7,15 @@ const Banner = () => {
         <h1 className={styles.bannerHeading}>Our Community</h1>
         <div className={styles.bannerContent}>
           <div>
-            <h2>100+</h2>
+            <h2>11+</h2>
             <p>Meetups</p>
           </div>
           <div>
-            <h2>5000+</h2>
+            <h2>10K+</h2>
             <p>Members</p>
           </div>
           <div>
-            <h2>50+</h2>
+            <h2>30+</h2>
             <p>Speakers</p>
           </div>
         </div>

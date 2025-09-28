@@ -1,8 +1,6 @@
-
-
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Lenis from 'lenis';
+import Lenis from "lenis";
 import NavigationDock from "./components/NavigationDock/NavigationDock";
 import HeroSection from "./pages/HeroSection/HeroSection";
 import AboutSection from "./pages/AboutSection/AboutSection";
@@ -16,6 +14,19 @@ import Organiser from "./pages/Organiser/Organiser";
 import Faq from "./pages/FAQ/Faq";
 import ContactSection from "./pages/ContactSection/ContactSection";
 import Loader from "./components/Loader/Loader";
+import CompletedEvents from "./pages/CompletedEvents/CompletedEvents";
+import Portfolio from "./pages/dipalik/Portfolio";
+
+import { acd2024Data } from "./data/acd2024";
+import { agenticAiAwsData } from "./data/agenticAIData";
+import { amazonQWorkshopData } from "./data/astuteDev";
+import { awsmeetupData } from "./data/awsmeetup";
+import { awsSecurityHubData } from "./data/awsSecurityHub";
+import { gameday2025Data } from "./data/gameDay2025";
+import { innovateAwsData } from "./data/innovateFaster";
+import { reinventRecapData } from "./data/reInventRecap";
+import { reimaginingCLIData } from "./data/reimaginingCLI";
+import { witData } from "./data/wit";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -56,32 +67,76 @@ function App() {
       <Routes>
         <Route path="/events" element={<AllEvents />} />
         <Route path="/sponsorship" element={<CFS />} />
-        <Route path="/" element={
-          <>
-            <NavigationDock />
-            <div id="hero">
-              <HeroSection />
-            </div>
-            <div id="about">
-              <AboutSection />
-            </div>
-            <AWSUGNCRImages />
-            <div id="events">
-              <EventsSection />
-            </div>
-            <Banner />
-            <Parallax />
-            <div id="organizers">
-              <Organiser />
-            </div>
-            <div id="faq">
-              <Faq />
-            </div>
-            <div id="contact">
-              <ContactSection />
-            </div>
-          </>
-        } />
+        <Route path="/Dipali_Kulshrestha" element={<Portfolio />} />
+        <Route
+          path="/acd2024"
+          element={<CompletedEvents eventData={acd2024Data} />}
+        />
+        <Route
+          path="/gameday2025"
+          element={<CompletedEvents eventData={gameday2025Data} />}
+        />
+        <Route
+          path="/astutedev"
+          element={<CompletedEvents eventData={amazonQWorkshopData} />}
+        />
+        <Route
+          path="/awsmeetup"
+          element={<CompletedEvents eventData={awsmeetupData} />}
+        />
+        <Route
+          path="/awsSecurityHub"
+          element={<CompletedEvents eventData={awsSecurityHubData} />}
+        />
+        <Route
+          path="/innovateaws"
+          element={<CompletedEvents eventData={innovateAwsData} />}
+        />
+        <Route
+          path="/agenticaiaws"
+          element={<CompletedEvents eventData={agenticAiAwsData} />}
+        />
+        <Route
+          path="/reInventRecap"
+          element={<CompletedEvents eventData={reinventRecapData} />}
+        />
+        <Route
+          path="/reimaginingCLI"
+          element={<CompletedEvents eventData={reimaginingCLIData} />}
+        />
+        <Route
+          path="/wit2025"
+          element={<CompletedEvents eventData={witData} />}
+        />
+        <Route
+          path="/"
+          element={
+            <>
+              <NavigationDock />
+              <div id="hero">
+                <HeroSection />
+              </div>
+              <div id="about">
+                <AboutSection />
+              </div>
+              <AWSUGNCRImages />
+              <div id="events">
+                <EventsSection />
+              </div>
+              <Banner />
+              <Parallax />
+              <div id="organizers">
+                <Organiser />
+              </div>
+              <div id="faq">
+                <Faq />
+              </div>
+              <div id="contact">
+                <ContactSection />
+              </div>
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
