@@ -113,7 +113,7 @@ function HeroSection() {
               key={index}
               className={styles.floatingIcon}
               initial={{ opacity: 0, scale: 0, y: 50 }}
-              animate={{ 
+              animate={{
                 opacity: 0.95,
                 scale: 1,
                 y: 0,
@@ -153,14 +153,14 @@ function HeroSection() {
                 left: iconData.initialX,
                 top: iconData.initialY,
               }}
-              whileHover={{ 
-                scale: 1.2, 
+              whileHover={{
+                scale: 1.2,
                 opacity: 0.8,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.3 },
               }}
             >
-              <img 
-                src={iconData.icon} 
+              <img
+                src={iconData.icon}
                 alt={iconData.alt}
                 className={styles.awsServiceIcon}
               />
@@ -173,11 +173,13 @@ function HeroSection() {
             className={styles.titleContainer}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{
+              duration: 1.2,
+              delay: 0.3,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
           >
-            <h1 className={styles.mainTitle}>
-              AWS User Group
-            </h1>
+            <h1 className={styles.mainTitle}>AWS User Group</h1>
             <motion.h2
               className={styles.titleHighlight}
               initial={{ opacity: 0, y: 20 }}
@@ -194,7 +196,7 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
           >
-            Empowering cloud professionals through knowledge sharing, 
+            Empowering cloud professionals through knowledge sharing,
             networking, and hands-on learning experiences
           </motion.p>
 
@@ -205,17 +207,14 @@ function HeroSection() {
             transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
           >
             <a
-              href="https://chat.whatsapp.com/I12lTsdZ8t1HZCGlolAd1Z"
+              href="https://www.meetup.com/amazonaws-delhi/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.ctaButton}
             >
               Join Community
             </a>
-            <Link 
-              to="/sponsorship"
-              className={styles.secondaryButton}
-            >
+            <Link to="/sponsorship" className={styles.secondaryButton}>
               <motion.div
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -228,15 +227,39 @@ function HeroSection() {
         </div>
 
         <div className={styles.wavesContainer}>
-          <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+          <svg
+            className={styles.waves}
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shapeRendering="auto"
+          >
             <defs>
-              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
             </defs>
             <g className={styles.parallax}>
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,153,0,0.7)" />
-              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,153,0,0.5)" />
-              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,153,0,0.3)" />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,153,0,0.7)"
+              />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,153,0,0.5)"
+              />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,153,0,0.3)"
+              />
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#FF9900" />
             </g>
           </svg>

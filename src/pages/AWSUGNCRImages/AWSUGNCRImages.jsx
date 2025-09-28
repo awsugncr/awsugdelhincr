@@ -39,9 +39,9 @@ import reinvent2 from "../../assets/events/reinvent_recap/aws10.jpg";
 import reinvent3 from "../../assets/events/reinvent_recap/aws2.jpg";
 
 // Women in Tech 2025 Events
-import wit1 from "../../assets/events/wit_2025/aws1.JPG";
+import wit1 from "../../assets/events/wit_2025/aws1.jpg";
 import wit2 from "../../assets/events/wit_2025/aws10.jpg";
-import wit3 from "../../assets/events/wit_2025/aws2.JPG";
+import wit3 from "../../assets/events/wit_2025/aws2.jpg";
 
 // First marquee - Mix of different events
 const marqueeImages1 = [
