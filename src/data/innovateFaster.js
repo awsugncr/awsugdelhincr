@@ -6,7 +6,7 @@ import img5 from "../assets/events/innovatefaster/1697633015548.jpg";
 import img6 from "../assets/events/innovatefaster/1697633016214.jpg";
 import img7 from "../assets/events/innovatefaster/AWS10.jpg";
 import img8 from "../assets/events/innovatefaster/AWS12.jpg";
-import img9 from "../assets/events/innovatefaster/AWS14.JPG";
+import img9 from "../assets/events/innovatefaster/AWS14.jpg";
 import img10 from "../assets/events/innovatefaster/AWS9.jpg";
 
 // Innovate Faster with AWS Event Data (Past Event)
