@@ -1,0 +1,306 @@
+/* Scoped Styles for Portfolio Component */
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(34, 34, 34, 0.8),
+    rgba(0, 0, 0, 0.4)
+  );
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.textContent {
+  max-width: 50%;
+}
+
+.textContent h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+.profession {
+  font-size: 1.5rem;
+  color: #bbdefb;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.profileImage {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid #ff7043;
+  animation: zoomIn 2s ease-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn {
+  background-color: #ff7043;
+  color: #fff;
+  font-weight: 600;
+}
+
+.primaryBtn:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 112, 67, 0.6);
+}
+
+.imageContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  color: black;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.aboutText h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: fadeInLeft 1.5s ease;
+}
+
+.aboutDescription {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  animation: fadeInLeft 1.8s ease;
+}
+
+.aboutImage {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutImage img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInRight 1.5s ease;
+}
+
+/* Courses Section */
+.courses {
+  padding: 80px 0;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.courseCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.courseCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.courseCard h3 {
+  font-size: 1.8rem;
+  color: #ff7043;
+  margin-bottom: 15px;
+}
+
+.courseCard p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.courseLink {
+  color: #fff;
+  background-color: #ff7043;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.courseLink:hover {
+  background-color: #e64a19;
+}
+
+/* Footer */
+.footer {
+  background-color: #424242;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #bdbdbd;
+}
+
+.socialLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialLinks a {
+  color: #ff7043;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #ff5722;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroContent,
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .textContent,
+  .imageContent {
+    max-width: 100%;
+  }
+  .textContent h1 {
+    font-size: 3rem;
+  }
+  .coursesGrid {
+    grid-template-columns: 1fr;
+  }
+}

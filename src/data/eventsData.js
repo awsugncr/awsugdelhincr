@@ -3,11 +3,11 @@ import awsSecurityHub from "../assets/events/securitygroup/1686481356627.jpg";
 import awsReinventRecap from "../assets/events/reinvent_recap/aws8.jpg";
 import awsAstuteDev from "../assets/events/astute_dev_with_Q/aws9.jpeg";
 import ACD2024 from "../assets/events/ACD 2024/image22.jpg";
-import awsGamedayGenAI from "../assets/events/gameday_2025/aws8.jpg"
-import innovateFaster from "../assets/events/innovatefaster/1697304577122.jpg"
-import awsWIT2025 from "../assets/events/wit_2025/aws13.JPG";
-import awsAgenticAI from "../assets/events/Agentic_AI_with_AWS/aws1.jpg"
-import acd2025Poster from "../assets/events/ACD_2025/ACD_2025_POSTER.jpeg"
+import awsGamedayGenAI from "../assets/events/gameday_2025/aws8.jpg";
+import innovateFaster from "../assets/events/innovatefaster/1697304577122.jpg";
+import awsWIT2025 from "../assets/events/wit_2025/aws13.jpg";
+import awsAgenticAI from "../assets/events/Agentic_AI_with_AWS/aws1.jpg";
+import acd2025Poster from "../assets/events/ACD_2025/ACD_2025_POSTER.jpeg";
 import awsReimaginingCLIProductivity from "../assets/events/Reimagining_CLI_Productivity/aws1.jpg";
 
 export const eventsData = [
@@ -19,7 +19,7 @@ export const eventsData = [
     venue: "TBA",
     image: acd2025Poster,
     link: "#",
-    status: "upcoming"
+    status: "upcoming",
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ export const eventsData = [
     time: "10:00 AM IST",
     venue: "LambdaTest",
     image: awsAgenticAI,
-    link: "#",
-    status: "completed"
+    link: "/agenticaiaws",
+    status: "completed",
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ export const eventsData = [
     time: "1:00 PM IST",
     venue: "Amazon Development Centre India, Gurugram",
     image: awsReimaginingCLIProductivity,
-    link: "#",
-    status: "completed"
+    link: "/reimaginingcli",
+    status: "completed",
   },
   {
     id: 5,
@@ -48,8 +48,8 @@ export const eventsData = [
     time: "10:00 AM IST",
     venue: "IIT Delhi",
     image: awsWIT2025,
-    link: "#",
-    status: "completed"
+    link: "/wit2025",
+    status: "completed",
   },
   {
     id: 7,
@@ -58,8 +58,8 @@ export const eventsData = [
     time: "1:00 PM IST",
     venue: "Amazon Development Centre India, Gurugram",
     image: awsGamedayGenAI,
-    link: "#",
-    status: "completed"
+    link: "/gameday2025",
+    status: "completed",
   },
   {
     id: 8,
@@ -68,8 +68,8 @@ export const eventsData = [
     time: "8:30 AM IST",
     venue: "IIT Delhi",
     image: ACD2024,
-    link: "#",
-    status: "completed"
+    link: "/acd2024",
+    status: "completed",
   },
   {
     id: 9,
@@ -78,8 +78,8 @@ export const eventsData = [
     time: "1:30 PM IST",
     venue: "Amazon Development Centre India, Gurugram",
     image: awsAstuteDev,
-    link: "#",
-    status: "completed"
+    link: "/astutedev",
+    status: "completed",
   },
   {
     id: 10,
@@ -88,8 +88,8 @@ export const eventsData = [
     time: "2:00 PM IST",
     venue: "Amazon Development Centre India, Gurugram",
     image: awsReinventRecap,
-    link: "#",
-    status: "completed"
+    link: "/reInventRecap",
+    status: "completed",
   },
   {
     id: 6,
@@ -98,8 +98,8 @@ export const eventsData = [
     time: "10:00 AM IST",
     venue: "Gautam Buddha University, Greater Noida",
     image: innovateFaster,
-    link: "#",
-    status: "completed"
+    link: "/innovateaws",
+    status: "completed",
   },
   {
     id: 11,
@@ -108,8 +108,8 @@ export const eventsData = [
     time: "3:00 PM IST",
     venue: "Ambience Corporate Office Tower-II, Gurugram",
     image: awsSecurityHub,
-    link: "#",
-    status: "completed"
+    link: "/awsSecurityHub",
+    status: "completed",
   },
   {
     id: 12,
@@ -118,7 +118,7 @@ export const eventsData = [
     time: "10:30 AM IST",
     venue: "Ambience Corporate Office Tower-II, Gurugram",
     image: awsMeetup,
-    link: "#",
-    status: "completed"
-  }
+    link: "/awsmeetup",
+    status: "completed",
+  },
 ];

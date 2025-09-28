@@ -1,0 +1,393 @@
+/* PastEventSpeakers Component Styles */
+
+.speakersSection {
+  padding: 5rem 0;
+  background: var(--color-bg);
+  min-height: 60vh;
+  position: relative;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 0 0 1.7rem 0;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .sectionDescription {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    font-weight: 400;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    margin: 1.2rem auto 0 auto;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Speakers Grid */
+  .speakersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  /* Speaker Card */
+  .speakerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+      145deg,
+      rgba(35, 47, 62, 0.4),
+      rgba(17, 24, 39, 0.6)
+    );
+    border-radius: 16px;
+    padding: 1rem 0.8rem 0.8rem 0.8rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 153, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+  }
+
+  .speakerCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 153, 0, 0.05),
+      rgba(83, 159, 229, 0.03)
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    border-radius: 16px;
+  }
+
+  .speakerCard:hover::before {
+    opacity: 1;
+  }
+
+  .speakerCard:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 153, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 153, 0, 0.1);
+  }
+
+  /* Image Container */
+  .imageContainer {
+    position: relative;
+    margin-bottom: 0.8rem;
+    width: 160px;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 153, 0, 0.1),
+      rgba(83, 159, 229, 0.1)
+    );
+    border: 2px solid rgba(255, 153, 0, 0.3);
+  }
+
+  .speakerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: grayscale(0.2) brightness(0.95);
+  }
+
+  .speakerCard:hover .speakerImage {
+    transform: scale(1.05);
+    filter: grayscale(0) brightness(1);
+  }
+
+  /* Speaker Badge */
+  .speakerBadge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 153, 0, 0.9);
+    color: var(--color-ink);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* LinkedIn Icon */
+  .linkedinIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 119, 181, 0.9);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+  }
+
+  .linkedinIcon:hover {
+    background: rgba(0, 119, 181, 1);
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* Speaker Information */
+  .speakerInfo {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .speakerName {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0 0 0.3rem 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .designation {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.75rem, 1vw, 0.85rem);
+    font-weight: 500;
+    color: var(--color-accent);
+    margin: 0 0 0.15rem 0;
+    line-height: 1.4;
+  }
+
+  .company {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.7rem, 0.9vw, 0.8rem);
+    margin-bottom: 1.8rem;
+  }
+
+  .speakersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .speakerCard {
+    padding: 0.8rem 0.6rem 0.6rem 0.6rem;
+  }
+
+  .imageContainer {
+    width: 140px;
+    height: 160px;
+    margin-bottom: 0.6rem;
+  }
+
+  .linkedinIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .speakerBadge {
+    bottom: 8px;
+    left: 8px;
+    padding: 3px 6px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .speakersSection {
+    padding: 3.5rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 1.5rem;
+  }
+
+  .speakersGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem 1.5rem;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .speakerCard {
+    padding: 0.6rem 0.4rem 0.4rem 0.4rem;
+    border-radius: 12px;
+  }
+
+  .imageContainer {
+    width: 120px;
+    height: 140px;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    border-width: 1px;
+  }
+
+  .linkedinIcon {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    top: 6px;
+    right: 6px;
+    border-radius: 6px;
+  }
+
+  .speakerBadge {
+    bottom: 6px;
+    left: 6px;
+    padding: 2px 4px;
+    font-size: 0.6rem;
+    border-radius: 8px;
+  }
+
+  .speakerName {
+    font-size: 0.85rem;
+  }
+
+  .designation {
+    font-size: 0.7rem;
+  }
+
+  .company {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .speakersSection {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 1.2rem;
+  }
+
+  .speakersGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem 1.5rem;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .speakerCard {
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    width: 100px; /* Slightly smaller for 2-column layout */
+    height: 120px;
+    margin-bottom: 0.5rem;
+  }
+
+  .linkedinIcon {
+    width: 22px;
+    height: 22px;
+    font-size: 9px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .speakerBadge {
+    bottom: 5px;
+    left: 5px;
+    padding: 2px 4px;
+    font-size: 0.55rem;
+  }
+
+  .speakerName {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .designation {
+    font-size: 0.65rem;
+    line-height: 1.3;
+  }
+
+  .company {
+    font-size: 0.6rem;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 380px) {
+  .speakersGrid {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+    gap: 0.8rem;
+  }
+
+  .speakerCard {
+    padding: 0.6rem 0.4rem;
+  }
+
+  .imageContainer {
+    width: 110px;
+    height: 125px;
+    margin-bottom: 0.4rem;
+  }
+
+  .speakerName {
+    font-size: 0.8rem;
+  }
+
+  .designation {
+    font-size: 0.65rem;
+  }
+
+  .company {
+    font-size: 0.6rem;
+  }
+}
+/* End of file */
