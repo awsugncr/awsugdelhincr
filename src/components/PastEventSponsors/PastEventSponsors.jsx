@@ -1,56 +1,20 @@
-import { useState, useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import styles from "./PastEventSponsors.module.css";
 
 const PastEventSponsors = ({ eventData }) => {
-  const [loadedLogos, setLoadedLogos] = useState({});
+  const sponsorsData = eventData?.sponsors || {};
 
-  // Flatten all sponsors into a single array with tier information
-  const allSponsors = useMemo(() => {
-    const sponsors = eventData?.sponsors || {};
-    const sponsorArray = [];
-    Object.entries(sponsors).forEach(([category, sponsorList]) => {
-      if (sponsorList && sponsorList.length > 0) {
-        sponsorList.forEach((sponsor, index) => {
-          sponsorArray.push({
-            ...sponsor,
-            category,
-            originalIndex: index,
-            key: `${category}-${index}`,
-          });
-        });
-      }
-    });
-    return sponsorArray;
-  }, [eventData?.sponsors]);
+  // Flatten all sponsors into a single array with category info
+  const allSponsors = Object.entries(sponsorsData).flatMap(
+    ([category, sponsorList]) =>
+      sponsorList?.map((sponsor, index) => ({
+        ...sponsor,
+        category,
+        key: `${category}-${index}`,
+      })) || []
+  );
 
-  // Dynamic imports for sponsor logos
-  useEffect(() => {
-    const loadLogos = async () => {
-      const logoMap = {};
-
-      // Load all sponsor logos
-      for (const sponsor of allSponsors) {
-        try {
-          const logoModule = await import(sponsor.logo);
-          logoMap[sponsor.key] = logoModule.default;
-        } catch (error) {
-          console.warn(`Failed to load logo for ${sponsor.name}:`, error);
-        }
-      }
-
-      setLoadedLogos(logoMap);
-    };
-
-    if (allSponsors.length > 0) {
-      loadLogos();
-    }
-  }, [allSponsors]);
-
-  // If no sponsors exist, don't render the component
-  if (allSponsors.length === 0) {
-    return null;
-  }
+  if (allSponsors.length === 0) return null;
 
   const getCategoryClass = (category) => {
     const categoryMap = {
@@ -78,7 +42,6 @@ const PastEventSponsors = ({ eventData }) => {
         <div className={styles.sponsorsContainer}>
           <div className={styles.allSponsorsGrid}>
             {allSponsors.map((sponsor) => {
-              const logoSrc = loadedLogos[sponsor.key];
               const categoryClass = getCategoryClass(sponsor.category);
 
               return (
@@ -93,9 +56,10 @@ const PastEventSponsors = ({ eventData }) => {
                     className={styles.sponsorLink}
                     aria-label={`Visit ${sponsor.name} website`}
                   >
-                    {logoSrc && (
+                    {/* Direct path from /public folder */}
+                    {sponsor.logo && (
                       <img
-                        src={logoSrc}
+                        src={sponsor.logo}
                         alt={sponsor.name}
                         className={styles.sponsorLogo}
                         loading="lazy"
