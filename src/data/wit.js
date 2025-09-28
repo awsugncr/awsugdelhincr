@@ -1,3 +1,15 @@
+import dishaBablaImg from "../assets/speakers/Disha Babla.jpg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
+import eshikaMahajanImg from "../assets/speakers/Eshika Mahajan.jpg";
+import hinaAroraImg from "../assets/speakers/Hina Arora.jpg";
+import saloniBhatiaImg from "../assets/speakers/Saloni Bhatia.jpg";
+import swatiAwasthiImg from "../assets/speakers/Swati Awasthi.jpg";
+import tanishiMookerjeeImg from "../assets/speakers/Tanishi Mookerjee.jpg";
+import bhuvaneswariImg from "../assets/speakers/Bhuvaneswari.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
+import wipLogo from "../assets/sponsors/WIP logo.png";
+import sweLogo from "../assets/sponsors/SWE.jpg";
+import awsugwitLogo from "../assets/sponsors/AWSUGWit.jpg";
 import aws1 from "../assets/events/wit_2025/aws1.jpg";
 import aws2 from "../assets/events/wit_2025/aws2.jpg";
 import aws3 from "../assets/events/wit_2025/aws3.jpg";
@@ -65,42 +77,42 @@ export const witData = {
   speakers: [
     {
       name: "Disha Babla",
-      image: "../../assets/speakers/Disha Babla.jpg",
+      image: dishaBablaImg,
       linkedin: "https://linkedin.com/in/dishababla",
     },
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/speakers/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://linkedin.com/in/dipali-kulshrestha",
     },
     {
       name: "Eshika Mahajan",
-      image: "../../assets/speakers/Eshika Mahajan.jpg",
+      image: eshikaMahajanImg,
       linkedin: "https://linkedin.com/in/eshikamahajan",
     },
     {
       name: "Hina Arora",
-      image: "../../assets/speakers/Hina Arora.jpg",
+      image: hinaAroraImg,
       linkedin: "https://linkedin.com/in/careerwithhina",
     },
     {
       name: "Saloni Bhatia",
-      image: "../../assets/speakers/Saloni Bhatia.jpg",
+      image: saloniBhatiaImg,
       linkedin: "https://linkedin.com/in/saloni-bhatia-phd-scholar-8372b5bb",
     },
     {
       name: "Swati Awasthi",
-      image: "../../assets/speakers/Swati Awasthi.jpg",
+      image: swatiAwasthiImg,
       linkedin: "https://linkedin.com/in/swati-awasthi",
     },
     {
       name: "Tanishi Mookerjee",
-      image: "../../assets/speakers/Tanishi Mookerjee.jpg",
+      image: tanishiMookerjeeImg,
       linkedin: "https://linkedin.com/in/tanishi-mookerjee",
     },
     {
       name: "Bhuvaneswari Subramani",
-      image: "../../assets/speakers/Bhuvaneswari.jpg",
+      image: bhuvaneswariImg,
       linkedin: "https://linkedin.com/in/bhuvanas",
     },
   ],
@@ -113,24 +125,24 @@ export const witData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],
     inAssociationWith: [
       {
         name: "Women in Product India",
-        logo: "../../assets/sponsors/WIP logo.png",
+        logo: wipLogo,
         website: "https://womeninproductindia.com",
       },
       {
         name: "Society of Women Engineers",
-        logo: "../../assets/sponsors/SWE.jpg",
+        logo: sweLogo,
         website: "https://swe.org",
       },
       {
         name: "AWS User Group Women in Tech India",
-        logo: "../../assets/sponsors/AWSUGWit.jpg",
+        logo: awsugwitLogo,
         website: "https://www.meetup.com/aws-user-group-women-in-tech-india",
       },
     ],

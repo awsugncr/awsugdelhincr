@@ -1,3 +1,23 @@
+import aditiSawhneyImg from "../assets/speakers/Aditi Sawhney.jpg";
+import adityaSoniImg from "../assets/speakers/Aditya Soni.jpg";
+import amitKumarImg from "../assets/speakers/Amit Kumar.jpg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
+import dimpleVaghelaImg from "../assets/speakers/Dimple Vaghela.jpg";
+import dishaBablaImg from "../assets/speakers/Disha Babla.jpg";
+import drAbhilashaVyasImg from "../assets/speakers/Dr. Abhilasha Rakesh Vyas.jpg";
+import faizalKhanImg from "../assets/speakers/Faizal Khan.jpg";
+import nileshVaghelaImg from "../assets/speakers/Nilesh Vaghela.jpg";
+import poojaRanjanImg from "../assets/speakers/Pooja Ranjan.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
+import ridhimaKapoorImg from "../assets/speakers/Ridhima Kapoor.jpg";
+import ruchiSoniImg from "../assets/speakers/Ruchi Soni.jpeg";
+import srushithRepakulaImg from "../assets/speakers/Srushith Repakula.jpg";
+import stephenHowellImg from "../assets/speakers/Stephen Howell.jpg";
+import tejasGuptaImg from "../assets/speakers/Tejas Gupta.jpg";
+import toshalKhawaleImg from "../assets/speakers/Toshal Khawale.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
+import devClubLogo from "../assets/sponsors/Dev Club.jpg";
+import snowflakeLogo from "../assets/sponsors/SnowFlake.jpg";
 import image2 from "../assets/events/ACD 2024/image2.jpg";
 import image3 from "../assets/events/ACD 2024/image3.jpg";
 import image6 from "../assets/events/ACD 2024/image6.jpg";
@@ -88,87 +108,87 @@ export const acd2024Data = {
   speakers: [
     {
       name: "Aditi Sawhney",
-      image: "../../assets/speakers/Aditi Sawhney.jpg",
+      image: aditiSawhneyImg,
       linkedin: "https://www.linkedin.com/in/sawhneyaditi/",
     },
     {
       name: "Aditya Soni",
-      image: "../../assets/speakers/Aditya Soni.jpg",
+      image: adityaSoniImg,
       linkedin: "https://www.linkedin.com/in/adityasonittyl/",
     },
     {
       name: "Amit Kumar",
-      image: "../../assets/speakers/Amit Kumar.jpg",
+      image: amitKumarImg,
       linkedin: "https://www.linkedin.com/in/amitkyvmw/",
     },
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/speakers/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://www.linkedin.com/in/dipalik/",
     },
     {
       name: "Dimple Vaghela",
-      image: "../../assets/speakers/Dimple Vaghela.jpg",
+      image: dimpleVaghelaImg,
       linkedin: "https://www.linkedin.com/in/dimple-vaghela-ba45447b/",
     },
     {
       name: "Disha Babla",
-      image: "../../assets/speakers/Disha Babla.jpg",
+      image: dishaBablaImg,
       linkedin: "https://www.linkedin.com/in/dishababla/",
     },
     {
       name: "Dr. Abhilasha Rakesh Vyas",
-      image: "../../assets/speakers/Dr. Abhilasha Rakesh Vyas.jpg",
+      image: drAbhilashaVyasImg,
       linkedin: "https://www.linkedin.com/in/abhilasharvyas/",
     },
     {
       name: "Faizal Khan",
-      image: "../../assets/speakers/Faizal Khan.jpg",
+      image: faizalKhanImg,
       linkedin: "https://www.linkedin.com/in/faizal-khan/",
     },
     {
       name: "Nilesh Vaghela",
-      image: "../../assets/speakers/Nilesh Vaghela.jpg",
+      image: nileshVaghelaImg,
       linkedin: "https://www.linkedin.com/in/nilesh-vaghela/",
     },
     {
       name: "Pooja Ranjan",
-      image: "../../assets/speakers/Pooja Ranjan.jpg",
+      image: poojaRanjanImg,
       linkedin: "https://www.linkedin.com/in/poojaranjan22/",
     },
     {
       name: "Rajat Arora",
-      image: "../../assets/speakers/Rajat Arora.jpeg",
+      image: rajatAroraImg,
       linkedin: "https://www.linkedin.com/in/arora-rajat-cw/",
     },
     {
       name: "Ridhima Kapoor",
-      image: "../../assets/speakers/Ridhima Kapoor.jpg",
+      image: ridhimaKapoorImg,
       linkedin: "https://www.linkedin.com/in/kapoor-ridhima/",
     },
     {
       name: "Ruchi Soni",
-      image: "../../assets/speakers/Ruchi Soni.jpeg",
+      image: ruchiSoniImg,
       linkedin: "https://www.linkedin.com/in/ruchi-soni-78396715/",
     },
     {
       name: "Srushith Repakula",
-      image: "../../assets/speakers/Srushith Repakula.jpg",
+      image: srushithRepakulaImg,
       linkedin: "https://linkedin.com/in/srushithrepakula",
     },
     {
       name: "Stephen Howell",
-      image: "../../assets/speakers/Stephen Howell.jpg",
+      image: stephenHowellImg,
       linkedin: "https://www.linkedin.com/in/stephenrichardhowell/",
     },
     {
       name: "Tejas Gupta",
-      image: "../../assets/speakers/Tejas Gupta.jpg",
+      image: tejasGuptaImg,
       linkedin: "https://www.linkedin.com/in/tejasguptaa/",
     },
     {
       name: "Toshal Khawale",
-      image: "../../assets/speakers/Toshal Khawale.jpg",
+      image: toshalKhawaleImg,
       linkedin: "https://www.linkedin.com/in/toshal-khawale/",
     },
   ],
@@ -187,14 +207,14 @@ export const acd2024Data = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],
     inAssociationWith: [
       {
         name: "Dev Club",
-        logo: "../../assets/sponsors/Dev Club.jpg",
+        logo: devClubLogo,
         website: "https://www.instagram.com/devclub_iitd/",
       },
     ],
@@ -203,7 +223,7 @@ export const acd2024Data = {
     silver: [
       {
         name: "Snowflake",
-        logo: "../../assets/sponsors/SnowFlake.jpg",
+        logo: snowflakeLogo,
         website: "https://snowflake.com",
       },
     ],

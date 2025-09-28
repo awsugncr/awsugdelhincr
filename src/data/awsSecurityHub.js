@@ -1,3 +1,6 @@
+import kirtiDhabhaiImg from "../assets/speakers/Kirti Dhabhai.jpg";
+import shagunBeniwalImg from "../assets/speakers/Shagun Beniwal.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/securitygroup/1686481356285.jpg";
 import aws2 from "../assets/events/securitygroup/1686481356627.jpg";
 import aws3 from "../assets/events/securitygroup/1686481364559.jpg";
@@ -67,12 +70,12 @@ export const awsSecurityHubData = {
   speakers: [
     {
       name: "Kirti Dhabhai",
-      image: "../../assets/speakers/Kirti Dhabhai.jpg",
+      image: kirtiDhabhaiImg,
       linkedin: "https://linkedin.com/in/kirtidhabhai",
     },
     {
       name: "Shagun Beniwal",
-      image: "../../assets/speakers/Shagun Beniwal.jpg",
+      image: shagunBeniwalImg,
       linkedin: "https://linkedin.com/in/shagun-beniwal-90560498",
     },
   ],
@@ -85,7 +88,7 @@ export const awsSecurityHubData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

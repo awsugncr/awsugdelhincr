@@ -1,3 +1,8 @@
+import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
+import ruchiKapurImg from "../assets/speakers/Ruchi Kapur.jpg";
+import tajinderSinghImg from "../assets/speakers/Tajinder Singh.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/reinvent_recap/aws1.jpg";
 import aws2 from "../assets/events/reinvent_recap/aws2.jpg";
 import aws3 from "../assets/events/reinvent_recap/aws3.jpg";
@@ -63,22 +68,22 @@ export const reinventRecapData = {
   speakers: [
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/speakers/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://linkedin.com/in/dipali-kulshrestha",
     },
     {
       name: "Rajat Arora",
-      image: "../../assets/speakers/Rajat Arora.jpeg",
+      image: rajatAroraImg,
       linkedin: "https://linkedin.com/in/rajatarora",
     },
     {
       name: "Ruchi Kapur",
-      image: "../../assets/speakers/Ruchi Kapur.jpg",
+      image: ruchiKapurImg,
       linkedin: "https://linkedin.com/in/ruchikapur",
     },
     {
       name: "Tajinder Singh",
-      image: "../../assets/speakers/Tajinder Singh.jpg",
+      image: tajinderSinghImg,
       linkedin: "https://linkedin.com/in/tajinder-singh-aa25464",
     },
   ],
@@ -91,7 +96,7 @@ export const reinventRecapData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

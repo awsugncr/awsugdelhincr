@@ -1,3 +1,5 @@
+import anutoshImg from "../assets/speakers/Anutosh.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/astute_dev_with_Q/aws1.jpg";
 import aws2 from "../assets/events/astute_dev_with_Q/aws2.jpg";
 import aws3 from "../assets/events/astute_dev_with_Q/aws3.jpg";
@@ -63,7 +65,7 @@ export const reimaginingCLIData = {
   speakers: [
     {
       name: "Anutosh",
-      image: "../../assets/speakers/Anutosh.jpg",
+      image: anutoshImg,
       linkedin: "https://www.linkedin.com/in/anutosh-singhwal/",
     },
   ],
@@ -76,7 +78,7 @@ export const reimaginingCLIData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

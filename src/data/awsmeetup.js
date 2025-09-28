@@ -1,3 +1,9 @@
+import dheerajChoudharyImg from "../assets/speakers/Dheeraj Choudhary.jpg";
+import dipaliKulshresthaImg from "../assets/core-team/Dipali Kulshrestha.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
+import ridhimaKapoorImg from "../assets/speakers/Ridhima Kapoor.jpg";
+import vishalAlhatImg from "../assets/speakers/Vishal Alhat.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/aws meetup/1683440786380.jpg";
 import aws2 from "../assets/events/aws meetup/1683440787913.jpg";
 import aws3 from "../assets/events/aws meetup/1683630102041.jpg";
@@ -68,27 +74,27 @@ export const awsmeetupData = {
   speakers: [
     {
       name: "Dheeraj Choudhary",
-      image: "../../assets/speakers/Dheeraj Choudhary.jpg",
+      image: dheerajChoudharyImg,
       linkedin: "https://linkedin.com/in/dheeraj-choudhary",
     },
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/core-team/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://linkedin.com/in/dipali-kulshrestha",
     },
     {
       name: "Rajat Arora",
-      image: "../../assets/speakers/Rajat Arora.jpeg",
+      image: rajatAroraImg,
       linkedin: "https://linkedin.com/in/rajatarora",
     },
     {
       name: "Ridhima Kapoor",
-      image: "../../assets/speakers/Ridhima Kapoor.jpg",
+      image: ridhimaKapoorImg,
       linkedin: "https://linkedin.com/in/ridhimakapoor",
     },
     {
       name: "Vishal Alhat",
-      image: "../../assets/speakers/Vishal Alhat.jpg",
+      image: vishalAlhatImg,
       linkedin: "https://linkedin.com/in/vishalalhat",
     },
   ],
@@ -101,7 +107,7 @@ export const awsmeetupData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

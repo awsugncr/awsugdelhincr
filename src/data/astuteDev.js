@@ -1,3 +1,5 @@
+import mayankSinghImg from "../assets/speakers/Mayank Singh.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/astute_dev_with_Q/aws1.jpg";
 import aws2 from "../assets/events/astute_dev_with_Q/aws2.jpg";
 import aws3 from "../assets/events/astute_dev_with_Q/aws3.jpg";
@@ -63,12 +65,12 @@ export const amazonQWorkshopData = {
   speakers: [
     {
       name: "Mayank Singh",
-      image: "../../assets/speakers/Mayank Singh.jpg",
+      image: mayankSinghImg,
       linkedin: "https://www.linkedin.com/in/mpsingh18/",
     },
     // {
     //   name: "Deepak Dixit",
-    //   image: "../../assets/speakers/Placeholder.png",
+    //   image: placeholderImg, // If you add a placeholder import
     //   linkedin: "https://www.linkedin.com/in/",
     // },
   ],
@@ -87,7 +89,7 @@ export const amazonQWorkshopData = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

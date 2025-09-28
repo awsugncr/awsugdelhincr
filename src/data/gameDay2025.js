@@ -1,3 +1,5 @@
+import mayankSinghImg from "../assets/speakers/Mayank Singh.jpg";
+import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/gameday_2025/aws1.jpg";
 import aws2 from "../assets/events/gameday_2025/aws2.jpg";
 import aws3 from "../assets/events/gameday_2025/aws3.jpg";
@@ -65,7 +67,7 @@ export const gameday2025Data = {
   speakers: [
     {
       name: "Mayank Singh",
-      image: "../../assets/speakers/Mayank Singh.jpg",
+      image: mayankSinghImg,
       linkedin: "https://linkedin.com/in/mpsingh18",
     },
   ],
@@ -78,7 +80,7 @@ export const gameday2025Data = {
     poweredBy: [
       {
         name: "AWS",
-        logo: "../../assets/sponsors/aws.png",
+        logo: awsLogo,
         website: "https://aws.amazon.com",
       },
     ],

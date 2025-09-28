@@ -1,3 +1,6 @@
+import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
+import eshikaMahajanImg from "../assets/speakers/Eshika Mahajan.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
 import img1 from "../assets/events/Agentic_AI_with_AWS/aws1.jpg";
 import img2 from "../assets/events/Agentic_AI_with_AWS/aws2.jpg";
 import img3 from "../assets/events/Agentic_AI_with_AWS/aws3.jpg";
@@ -58,17 +61,17 @@ export const agenticAiAwsData = {
   speakers: [
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/speakers/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://www.linkedin.com/in/dipalik/",
     },
     {
       name: "Eshika Mahajan",
-      image: "../../assets/speakers/Eshika Mahajan.jpg",
+      image: eshikaMahajanImg,
       linkedin: "https://www.linkedin.com/in/eshikamahajan/",
     },
     {
       name: "Rajat Arora",
-      image: "../../assets/speakers/Rajat Arora.jpeg",
+      image: rajatAroraImg,
       linkedin: "https://www.linkedin.com/in/arora-rajat-cw/",
     },
   ],

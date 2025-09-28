@@ -1,3 +1,5 @@
+import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
 import img1 from "../assets/events/innovatefaster/1697304561783.jpg";
 import img2 from "../assets/events/innovatefaster/1697304565998.jpg";
 import img3 from "../assets/events/innovatefaster/1697304575176.jpg";
@@ -67,12 +69,12 @@ export const innovateAwsData = {
   speakers: [
     {
       name: "Dipali Kulshrestha",
-      image: "../../assets/speakers/Dipali Kulshrestha.jpg",
+      image: dipaliKulshresthaImg,
       linkedin: "https://www.linkedin.com/in/dipalik/",
     },
     {
       name: "Rajat Arora",
-      image: "../../assets/speakers/Rajat Arora.jpeg",
+      image: rajatAroraImg,
       linkedin: "https://www.linkedin.com/in/arora-rajat-cw/",
     },
   ],
