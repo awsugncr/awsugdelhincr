@@ -1,5 +1,5 @@
-import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
-import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat_Arora.jpeg";
 import img1 from "../assets/events/innovatefaster/1697304561783.jpg";
 import img2 from "../assets/events/innovatefaster/1697304565998.jpg";
 import img3 from "../assets/events/innovatefaster/1697304575176.jpg";

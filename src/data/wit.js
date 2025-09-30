@@ -1,14 +1,15 @@
-import dishaBablaImg from "../assets/speakers/Disha Babla.jpg";
-import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
-import eshikaMahajanImg from "../assets/speakers/Eshika Mahajan.jpg";
-import hinaAroraImg from "../assets/speakers/Hina Arora.jpg";
-import saloniBhatiaImg from "../assets/speakers/Saloni Bhatia.jpg";
-import swatiAwasthiImg from "../assets/speakers/Swati Awasthi.jpg";
-import tanishiMookerjeeImg from "../assets/speakers/Tanishi Mookerjee.jpg";
+import dishaBablaImg from "../assets/speakers/Disha_Babla.jpg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
+import eshikaMahajanImg from "../assets/speakers/Eshika_Mahajan.jpg";
+import hinaAroraImg from "../assets/speakers/Hina_Arora.jpg";
+import saloniBhatiaImg from "../assets/speakers/Saloni_Bhatia.jpg";
+import swatiAwasthiImg from "../assets/speakers/Swati_Awasthi.jpg";
+import tanishiMookerjeeImg from "../assets/speakers/Tanishi_Mookerjee.jpg";
 import bhuvaneswariImg from "../assets/speakers/Bhuvaneswari.jpg";
 import awsLogo from "../assets/sponsors/aws.png";
-import wipLogo from "../assets/sponsors/WIP logo.png";
+import wipLogo from "../assets/sponsors/WIP_logo.png";
 import sweLogo from "../assets/sponsors/SWE.jpg";
+import devclubLogo from "../assets/sponsors/Dev_Club.jpg";
 import awsugwitLogo from "../assets/sponsors/AWSUGWit.jpg";
 import aws1 from "../assets/events/wit_2025/aws1.jpg";
 import aws2 from "../assets/events/wit_2025/aws2.jpg";
@@ -40,7 +41,7 @@ export const witData = {
     type: "Workshop",
     organizer: "AWS",
     attendees: "100+",
-    sessions: "8",
+    sessions: "6",
     speakers: "8",
     status: "completed",
   },
@@ -144,6 +145,11 @@ export const witData = {
         name: "AWS User Group Women in Tech India",
         logo: awsugwitLogo,
         website: "https://www.meetup.com/aws-user-group-women-in-tech-india",
+      },
+      {
+        name: "Dev Club",
+        logo: devclubLogo,
+        website: "https://www.instagram.com/devclub_iitd/",
       },
     ],
     platinum: [],

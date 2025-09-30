@@ -52,60 +52,128 @@ const courses = [
 const Portfolio = () => {
   return (
     <div>
-      {/* Hero Section */}
       <section id="hero" className={styles.hero}>
         <div className={styles.overlay}></div>
         <div className={`${styles.container} ${styles.heroContent}`}>
-          <div className={styles.textContent}>
-            <h1>Dipali Kulshrestha</h1>
-            <p className={styles.profession}>
-              AWS HERO | Vice President - Data Engineering | Community Builder
-            </p>
-            <a href="#about" className={`${styles.btn} ${styles.primaryBtn}`}>
-              About Me
-            </a>
-          </div>
           <div className={styles.imageContent}>
-            <img
-              src={profileImage}
-              alt="Dipali Kulshrestha"
-              className={styles.profileImage}
-            />
+            <div className={styles.profileImageContainer}>
+              <img
+                src={profileImage}
+                alt="Dipali Kulshrestha"
+                className={styles.profileImage}
+              />
+            </div>
+          </div>
+
+          <div className={styles.textContent}>
+            <h1>
+              Dipali <span className={styles.highlight}>Kulshrestha</span>
+            </h1>
+            <p className={styles.profession}>
+              AWS Hero • VP Data Engineering • Community Builder
+            </p>
+
+            <div className={styles.statsContainer}>
+              <div className={styles.statCard}>
+                <span className={styles.statNumber}>6+</span>
+                <span className={styles.statLabel}>Courses</span>
+              </div>
+              <div className={styles.statCard}>
+                <span className={styles.statNumber}>10K+</span>
+                <span className={styles.statLabel}>Students</span>
+              </div>
+              <div className={styles.statCard}>
+                <span className={styles.statNumber}>AWS</span>
+                <span className={styles.statLabel}>Hero</span>
+              </div>
+            </div>
+
+            <div className={styles.heroActions}>
+              <a href="#about" className={`${styles.btn} ${styles.primaryBtn}`}>
+                About Me
+              </a>
+              <a
+                href="#courses"
+                className={`${styles.btn} ${styles.secondaryBtn}`}
+              >
+                View Courses
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className={styles.about}>
         <div className={`${styles.container} ${styles.aboutContent}`}>
           <div className={styles.aboutText}>
             <h2>About Me</h2>
             <p className={styles.aboutDescription}>
-              Dipali Kulshrestha is an AWS Hero and Cloud Architect with a
-              passion for helping others master AWS. With extensive experience
-              in cloud technologies, she has published several LinkedIn Learning
-              courses and regularly conducts workshops to empower learners in
-              their AWS journey.
+              As an AWS Hero and VP of Data Engineering, I&apos;m passionate
+              about empowering the next generation of cloud professionals.
+              Through my comprehensive LinkedIn Learning courses and community
+              leadership, I&apos;ve helped thousands of learners master AWS
+              technologies and advance their careers.
             </p>
-            <a href="#courses" className={`${styles.btn} ${styles.primaryBtn}`}>
-              Explore My Courses
-            </a>
+            <p className={styles.aboutDescription}>
+              My expertise spans DevOps, data engineering, and generative AI,
+              with a focus on creating secure, scalable solutions using AWS
+              services.
+            </p>
+
+            <ul className={styles.achievementsList}>
+              <li className={styles.achievement}>
+                <span className={styles.achievementIcon}>🏆</span>
+                <span className={styles.achievementText}>
+                  AWS Hero Recognition
+                </span>
+              </li>
+              <li className={styles.achievement}>
+                <span className={styles.achievementIcon}>💼</span>
+                <span className={styles.achievementText}>
+                  VP Data Engineering
+                </span>
+              </li>
+              <li className={styles.achievement}>
+                <span className={styles.achievementIcon}>🚀</span>
+                <span className={styles.achievementText}>
+                  Community Builder
+                </span>
+              </li>
+              <li className={styles.achievement}>
+                <span className={styles.achievementIcon}>📚</span>
+                <span className={styles.achievementText}>
+                  LinkedIn Learning Author
+                </span>
+              </li>
+            </ul>
           </div>
+
           <div className={styles.aboutImage}>
-            <img src={awsHero} alt="About Me" />
+            <img src={awsHero} alt="AWS Hero Recognition" />
           </div>
         </div>
       </section>
 
-      {/* Courses Section */}
       <section id="courses" className={styles.courses}>
         <div className={styles.container}>
-          <h2>Courses I've Created</h2>
-          <div className={styles.coursesGrid}>
+          <div className={styles.coursesHeader}>
+            <h2>Featured Courses</h2>
+            <p className={styles.coursesSubtitle}>
+              Comprehensive AWS training designed to accelerate your cloud
+              journey
+            </p>
+          </div>
+
+          <ul className={styles.coursesGrid}>
             {courses.map((course, index) => (
-              <div className={styles.courseCard} key={index}>
-                <h3>{course.title}</h3>
-                <p>{course.description}</p>
+              <li className={styles.courseCard} key={index}>
+                <div className={styles.courseNumber}>
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <div className={styles.courseContent}>
+                  <h3>{course.title.replace(/^Course \d+:\s*/, "")}</h3>
+                  <p>{course.description}</p>
+                </div>
                 <a
                   href={course.link}
                   target="_blank"
@@ -114,45 +182,55 @@ const Portfolio = () => {
                 >
                   View Course
                 </a>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      {/* Footer Section */}
       <footer className={styles.footer}>
         <div className={styles.container}>
-          <p>Connect with me on:</p>
-          <ul className={styles.socialLinks}>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/dipalik/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://dev.to/dipalikulshrestha"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaDev />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://learning-dipali.medium.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaMedium />
-              </a>
-            </li>
-          </ul>
+          <div className={styles.footerContent}>
+            <h3 className={styles.footerTitle}>Let&apos;s Connect</h3>
+            <p>Join thousands of learners on their AWS journey</p>
+
+            <ul className={styles.socialLinks}>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/dipalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://dev.to/dipalikulshrestha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Dev.to"
+                >
+                  <FaDev />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://learning-dipali.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Medium"
+                >
+                  <FaMedium />
+                </a>
+              </li>
+            </ul>
+
+            <div className={styles.footerBottom}>
+              <p>&copy; 2025 Dipali Kulshrestha. All rights reserved.</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

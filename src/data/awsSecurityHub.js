@@ -1,5 +1,5 @@
-import kirtiDhabhaiImg from "../assets/speakers/Kirti Dhabhai.jpg";
-import shagunBeniwalImg from "../assets/speakers/Shagun Beniwal.jpg";
+import kirtiDhabhaiImg from "../assets/speakers/Kirti_Dhabhai.jpg";
+import shagunBeniwalImg from "../assets/speakers/Shagun_Beniwal.jpg";
 import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/securitygroup/1686481356285.jpg";
 import aws2 from "../assets/events/securitygroup/1686481356627.jpg";
