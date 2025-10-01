@@ -1,6 +1,6 @@
-import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
-import eshikaMahajanImg from "../assets/speakers/Eshika Mahajan.jpg";
-import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
+import eshikaMahajanImg from "../assets/speakers/Eshika_Mahajan.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat_Arora.jpeg";
 import img1 from "../assets/events/Agentic_AI_with_AWS/aws1.jpg";
 import img2 from "../assets/events/Agentic_AI_with_AWS/aws2.jpg";
 import img3 from "../assets/events/Agentic_AI_with_AWS/aws3.jpg";

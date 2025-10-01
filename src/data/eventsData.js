@@ -18,7 +18,7 @@ export const eventsData = [
     time: "TBA",
     venue: "TBA",
     image: acd2025Poster,
-    link: "#",
+    link: "/acd2025",
     status: "upcoming",
   },
   {
