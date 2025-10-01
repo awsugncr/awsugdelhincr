@@ -1,8 +1,8 @@
-import dheerajChoudharyImg from "../assets/speakers/Dheeraj Choudhary.jpg";
+import dheerajChoudharyImg from "../assets/speakers/Dheeraj_Choudhary.jpg";
 import dipaliKulshresthaImg from "../assets/core-team/Dipali Kulshrestha.jpg";
-import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
-import ridhimaKapoorImg from "../assets/speakers/Ridhima Kapoor.jpg";
-import vishalAlhatImg from "../assets/speakers/Vishal Alhat.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat_Arora.jpeg";
+import ridhimaKapoorImg from "../assets/speakers/Ridhima_Kapoor.jpg";
+import vishalAlhatImg from "../assets/speakers/Vishal_Alhat.jpg";
 import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/aws meetup/1683440786380.jpg";
 import aws2 from "../assets/events/aws meetup/1683440787913.jpg";

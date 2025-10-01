@@ -1,7 +1,7 @@
-import dipaliKulshresthaImg from "../assets/speakers/Dipali Kulshrestha.jpg";
-import rajatAroraImg from "../assets/speakers/Rajat Arora.jpeg";
-import ruchiKapurImg from "../assets/speakers/Ruchi Kapur.jpg";
-import tajinderSinghImg from "../assets/speakers/Tajinder Singh.jpg";
+import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
+import rajatAroraImg from "../assets/speakers/Rajat_Arora.jpeg";
+import ruchiKapurImg from "../assets/speakers/Ruchi_Kapur.jpg";
+import tajinderSinghImg from "../assets/speakers/Tajinder_Singh.jpg";
 import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/reinvent_recap/aws1.jpg";
 import aws2 from "../assets/events/reinvent_recap/aws2.jpg";

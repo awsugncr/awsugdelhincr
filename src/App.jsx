@@ -15,7 +15,9 @@ import Faq from "./pages/FAQ/Faq";
 import ContactSection from "./pages/ContactSection/ContactSection";
 import Loader from "./components/Loader/Loader";
 import CompletedEvents from "./pages/CompletedEvents/CompletedEvents";
+
 import Portfolio from "./pages/dipalik/Portfolio";
+import UpcomingEvents from "./pages/UpcomingEvents/UpcomingEvents";
 
 import { acd2024Data } from "./data/acd2024";
 import { agenticAiAwsData } from "./data/agenticAIData";
@@ -65,9 +67,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/events" element={<AllEvents />} />
+  <Route path="/events" element={<AllEvents />} />
+  <Route path="/acd2025" element={<UpcomingEvents />} />
         <Route path="/sponsorship" element={<CFS />} />
-        <Route path="/Dipali_Kulshrestha" element={<Portfolio />} />
+        <Route path="/dipalik" element={<Portfolio />} />
         <Route
           path="/acd2024"
           element={<CompletedEvents eventData={acd2024Data} />}

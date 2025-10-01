@@ -1,4 +1,4 @@
-import mayankSinghImg from "../assets/speakers/Mayank Singh.jpg";
+import mayankSinghImg from "../assets/speakers/Mayank_Singh.jpg";
 import awsLogo from "../assets/sponsors/aws.png";
 import aws1 from "../assets/events/gameday_2025/aws1.jpg";
 import aws2 from "../assets/events/gameday_2025/aws2.jpg";
