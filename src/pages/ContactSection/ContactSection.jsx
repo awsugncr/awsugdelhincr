@@ -25,7 +25,7 @@ const contactInfo = [
 
 function ContactSection() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <div className={styles.container}>
         <div className={styles.header}>
           <Heading text="Connect With Us" />

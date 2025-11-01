@@ -1,0 +1,333 @@
+/* Upcoming Event Popup Styles */
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.popupOverlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popupContainer {
+  background: linear-gradient(145deg, var(--color-surface), var(--color-bg));
+  border: 1px solid rgba(255, 153, 0, 0.2);
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 153, 0, 0.1);
+  transform: translateY(50px) scale(0.9);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popupContainer.slideIn {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.closeButton:hover {
+  background: rgba(255, 153, 0, 0.2);
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+/* Popup Content Layout */
+.popupContent {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Poster Section */
+.posterSection {
+  position: relative;
+  width: 300px;
+  min-width: 300px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-accent), #e68a00);
+}
+
+.eventPoster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.posterOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 153, 0, 0.1) 50%,
+    rgba(255, 153, 0, 0.2) 100%
+  );
+}
+
+.eventBadge {
+  display: none;
+}
+
+/* Details Section */
+.detailsSection {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eventHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.eventSubtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.eventTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--color-accent), #e68a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Event Info */
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoIcon {
+  color: var(--color-accent);
+  font-size: 1rem;
+  min-width: 1rem;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.infoLabel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.infoValue {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  line-height: 1.3;
+}
+
+/* CTA Section */
+.ctaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.ctaText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.registerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--color-accent), #e68a00);
+  color: var(--color-bg);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(255, 153, 0, 0.3);
+  align-self: center;
+  min-width: 140px;
+}
+
+.registerButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+  background: linear-gradient(135deg, #e68a00, var(--color-accent));
+}
+
+.registerButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .popupContainer {
+    max-width: 95%;
+    margin: 1rem;
+    max-height: 85vh;
+  }
+
+  .popupContent {
+    flex-direction: column;
+  }
+
+  .posterSection {
+    width: 100%;
+    height: 180px;
+    min-width: unset;
+  }
+
+  .detailsSection {
+    padding: 1.2rem;
+  }
+
+  .eventTitle {
+    font-size: 1.1rem;
+  }
+
+  .eventInfo {
+    gap: 0.6rem;
+  }
+
+  .registerButton {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popupOverlay {
+    padding: 0.5rem;
+  }
+
+  .popupContainer {
+    max-height: 90vh;
+  }
+
+  .posterSection {
+    height: 160px;
+  }
+
+  .detailsSection {
+    padding: 1rem;
+  }
+
+  .eventTitle {
+    font-size: 1rem;
+  }
+
+  .closeButton {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .infoValue {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

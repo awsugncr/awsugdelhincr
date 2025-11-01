@@ -67,8 +67,8 @@ function App() {
   return (
     <Router>
       <Routes>
-  <Route path="/events" element={<AllEvents />} />
-  <Route path="/acd2025" element={<UpcomingEvents />} />
+        <Route path="/events" element={<AllEvents />} />
+        <Route path="/acd2025" element={<UpcomingEvents />} />
         <Route path="/sponsorship" element={<CFS />} />
         <Route path="/dipalik" element={<Portfolio />} />
         <Route
