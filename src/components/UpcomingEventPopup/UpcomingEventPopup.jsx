@@ -126,6 +126,9 @@ UpcomingEventPopup.propTypes = {
     venueDetails: PropTypes.shape({
       name: PropTypes.string,
     }),
+    eventDetails: PropTypes.shape({
+      time: PropTypes.string,
+    }),
   }),
   isVisible: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,

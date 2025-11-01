@@ -8,7 +8,6 @@ const UpcomingEventDateVenue = ({ eventData }) => {
   const venue = eventData?.venue || eventData?.venueDetails?.name;
   const mapEmbedUrl = eventData?.mapEmbedUrl || eventData?.venueDetails?.mapEmbedUrl;
   const expectedAttendees = eventData?.eventDetails?.attendees;
-  const eventTime = eventData?.eventDetails?.time;
   const duration = eventData?.eventDetails?.duration;
   const entry = eventData?.eventDetails?.entry;
   const distanceFromMetro = eventData?.eventDetails?.distanceFromMetro;
@@ -118,6 +117,9 @@ UpcomingEventDateVenue.propTypes = {
     }),
     eventDetails: PropTypes.shape({
       attendees: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      duration: PropTypes.string,
+      entry: PropTypes.string,
+      distanceFromMetro: PropTypes.string,
     }),
   }),
 };
