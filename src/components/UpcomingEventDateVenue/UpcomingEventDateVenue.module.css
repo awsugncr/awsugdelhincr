@@ -1,0 +1,489 @@
+/* UpcomingEventDateVenue.module.css - Modern Creative Design */
+
+.dateVenueSection {
+  position: relative;
+  width: 100%;
+  background: var(--color-bg);
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.dateVenueSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255, 153, 0, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 70%, rgba(83, 159, 229, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sectionSubtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Main Layout - Asymmetric Design */
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Featured Date Card */
+.featuredDateCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredDateCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 153, 0, 0.3);
+}
+
+.featuredDateCard::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  transform: rotate(45deg);
+}
+
+.dateCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.dateIcon {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+.dateLabel {
+  color: var(--color-accent);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.dateDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.dayNumber {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-text-light);
+  line-height: 1;
+}
+
+.monthYear {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.month {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.year {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.dayName {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--color-accent-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+  margin-top: 0.5rem;
+}
+
+/* Quick Info Grid */
+.quickInfoGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.infoItem {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.infoItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-accent);
+  transform: translateX(5px);
+}
+
+.infoIcon {
+  color: var(--color-accent-2);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoLabel {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.infoValue {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+/* Right Column */
+.rightColumn {
+  position: relative;
+}
+
+/* Venue Card */
+.venueCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.venueHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.venueIcon {
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.venueInfo {
+  flex: 1;
+}
+
+.venueTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.venueAddress {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Map Wrapper */
+.mapWrapper {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mapOverlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 153, 0, 0.3);
+}
+
+.distanceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.distanceLabel {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.distanceValue {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* Timeline Section */
+.timelineSection {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.timelineTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.timelineDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid var(--color-bg);
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.timelineTime {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.2rem;
+}
+
+.timelineActivity {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .leftColumn {
+    order: 2;
+  }
+  
+  .rightColumn {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .dateVenueSection {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .featuredDateCard {
+    padding: 1.5rem;
+  }
+  
+  .dayNumber {
+    font-size: 2.5rem;
+  }
+  
+  .quickInfoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mapWrapper {
+    height: 250px;
+  }
+  
+  .timeline {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .dateVenueSection {
+    padding: 2rem 0;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .featuredDateCard,
+  .venueCard,
+  .timelineSection {
+    padding: 1rem;
+  }
+  
+  .mapWrapper {
+    height: 200px;
+  }
+  
+  .timelineActivity {
+    font-size: 0.75rem;
+  }
+}
