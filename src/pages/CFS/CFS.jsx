@@ -1,7 +1,6 @@
 import {
   FaCheck,
   FaEnvelope,
-  FaTimes,
   FaStar,
   FaHandshake,
   FaUsers,
@@ -66,7 +65,7 @@ function CFS() {
                   <div className={styles.packageHeader}>
                     <FaStar className={styles.packageIcon} />
                     <p>Platinum</p>
-                    <p className={styles.packagePrice}>USD 6500 + tax</p>
+                    <p className={styles.packagePrice}>USD 4000 + tax</p>
                     <span className={styles.packageBadge}>Most Popular</span>
                   </div>
                 </th>
@@ -74,14 +73,14 @@ function CFS() {
                   <div className={styles.packageHeader}>
                     <FaHandshake className={styles.packageIcon} />
                     <p>Gold</p>
-                    <p className={styles.packagePrice}>USD 3500 + tax</p>
+                    <p className={styles.packagePrice}>USD 2500 + tax</p>
                   </div>
                 </th>
                 <th className={styles["cfs-silver"]}>
                   <div className={styles.packageHeader}>
                     <FaUsers className={styles.packageIcon} />
                     <p>Silver</p>
-                    <p className={styles.packagePrice}>USD 2000 + tax</p>
+                    <p className={styles.packagePrice}>USD 1500 + tax</p>
                   </div>
                 </th>
               </tr>
@@ -95,7 +94,7 @@ function CFS() {
                   </div>
                 </th>
                 <td>
-                  <FaCheck className={styles["cfs-icon-check"]} />
+                  <span className={styles.highlight}>Premium placement</span>
                 </td>
                 <td>
                   <FaCheck className={styles["cfs-icon-check"]} />
@@ -135,7 +134,7 @@ function CFS() {
                   <span className={styles.highlight}>15 mins (1 slot)</span>
                 </td>
                 <td>
-                  <FaTimes className={styles["cfs-icon-times"]} />
+                  <span className={styles.highlight}>5 mins lightning talk</span>
                 </td>
               </tr>
               <tr>
@@ -169,24 +168,7 @@ function CFS() {
                   <span className={styles.highlight}>2 times</span>
                 </td>
                 <td>
-                  <span className={styles.highlight}>Only once</span>
-                </td>
-              </tr>
-              <tr>
-                <th className={styles["cfs-col-title"]}>
-                  <div className={styles.featureRow}>
-                    <span>Workshop</span>
-                    <small>Up to 120 minutes</small>
-                  </div>
-                </th>
-                <td>
-                  <FaCheck className={styles["cfs-icon-check"]} />
-                </td>
-                <td>
-                  <FaTimes className={styles["cfs-icon-times"]} />
-                </td>
-                <td>
-                  <FaTimes className={styles["cfs-icon-times"]} />
+                  <span className={styles.highlight}>1 time</span>
                 </td>
               </tr>
             </tbody>
