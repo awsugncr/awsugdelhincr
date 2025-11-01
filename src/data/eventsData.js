@@ -13,10 +13,10 @@ import awsReimaginingCLIProductivity from "../assets/events/Reimagining_CLI_Prod
 export const eventsData = [
   {
     id: 1,
-    name: "AWS Community Day 2025",
-    date: "Coming Soon",
-    time: "TBA",
-    venue: "TBA",
+    name: "AWS Community Day Delhi NCR 2025",
+    date: "Sunday, November 16, 2025",
+    time: "9:00 AM - 5:30 PM",
+    venue: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)",
     image: acd2025Poster,
     link: "/acd2025",
     status: "upcoming",
