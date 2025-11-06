@@ -5,6 +5,7 @@ import {
   FaMapMarkerAlt,
   FaMicrophone,
   FaTicketAlt,
+  FaCalendarAlt,
 } from "react-icons/fa";
 
 import { motion } from "framer-motion";
@@ -36,6 +37,14 @@ const UpcomingEventHero = ({ eventData }) => {
       onClick: () =>
         document
           .getElementById("register")
+          ?.scrollIntoView({ behavior: "smooth" }),
+    },
+    {
+      label: "Agenda",
+      icon: <FaCalendarAlt />,
+      onClick: () =>
+        document
+          .getElementById("agenda")
           ?.scrollIntoView({ behavior: "smooth" }),
     },
     {
