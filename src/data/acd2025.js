@@ -37,7 +37,7 @@ export const acd2025Data = {
     type: "Community Day",
     organizer: "AWS User Group Delhi NCR",
     attendees: "300+",
-    sessions: "TBA",
+    sessions: "13",
     speakers: "TBA",
     status: "upcoming",
     time: "9:00 AM - 5:30 PM",
@@ -238,7 +238,7 @@ export const acd2025Data = {
   // Registration information
   registration: {
     isOpen: true,
-    url: "https://www.meetup.com/amazonaws-delhi/events/311761403/",
+    url: "https://konfhub.com/acd-delhi-2025",
     earlyBird: {
       available: false,
       price: "₹1,099",
