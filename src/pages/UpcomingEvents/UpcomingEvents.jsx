@@ -4,6 +4,7 @@ import UpcomingEventHero from "../../components/UpcomingEventHero/UpcomingEventH
 import UpcomingEventDateVenue from "../../components/UpcomingEventDateVenue";
 import UpcomingEventRegister from "../../components/UpcomingEventRegister";
 import UpcomingEventSpeaker from "../../components/UpcomingEventSpeaker";
+import UpcomingEventAgenda from "../../components/UpcomingEventAgenda";
 import PastEventHighlight from "../../components/PastEventHighlight";
 import UpcomingEventLookingAhead from "../../components/UpcomingEventLookingAhead";
 import UpcomingEventPopup from "../../components/UpcomingEventPopup";
@@ -38,6 +39,7 @@ const UpcomingEvents = () => {
       <UpcomingEventHero eventData={acd2025Data} />
       <UpcomingEventDateVenue eventData={acd2025Data} />
       <UpcomingEventRegister eventData={acd2025Data} />
+      <UpcomingEventAgenda />
       <UpcomingEventSpeaker eventData={acd2025Data} />
       <UpcomingEventAbout eventData={acd2025Data} />
       <PastEventHighlight eventData={acd2025Data} />
