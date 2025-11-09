@@ -1,11 +1,12 @@
 import awsLogo from "../assets/sponsors/aws.png";
 
 // Import speaker images for ACD 2025 final speakers
+import abhilashaImg from "../assets/speakers/Dr._Abhilasha_Rakesh_Vyas.jpg";
 import adityaSoniImg from "../assets/speakers/Aditya_Soni.jpg";
-import akanshaRaiSharmaImg from "../assets/speakers/Akansha_Rai_Sharma.jpg";
 import amitKumarImg from "../assets/speakers/Amit_Kumar.jpg";
 import annieImg from "../assets/speakers/Annie_Mattoo.png";
 import anshikaTiwariImg from "../assets/speakers/Anshika_Tiwari.png";
+import biswajitMohapatraImg from "../assets/speakers/Dr_Biswajit_Mohapatra.jpg";
 import dimpleVaghelaImg from "../assets/speakers/Dimple_Vaghela.jpg";
 import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
 import dishaBablaImg from "../assets/speakers/Disha_Babla.jpg";
@@ -37,8 +38,8 @@ export const acd2025Data = {
     type: "Community Day",
     organizer: "AWS User Group Delhi NCR",
     attendees: "300+",
-    sessions: "13",
-    speakers: "TBA",
+    sessions: "11+",
+    speakers: "15+",
     status: "upcoming",
     time: "9:00 AM - 5:30 PM",
     duration: "Full Day",
@@ -85,11 +86,11 @@ export const acd2025Data = {
       linkedin: "https://www.linkedin.com/in/adityasonittyl/",
     },
     {
-      name: "Akanksha Rai Sharma",
-      title: "Technical Program Manager for India and South Asia",
-      organization: "Amazon Web Services (AWS)",
-      image: akanshaRaiSharmaImg,
-      linkedin: "https://www.linkedin.com/in/akanksha-rai-sharma-6b6a2897/",
+      name: "Dr. Abhilasha Rakesh Vyas",
+      title: "Cloud Security Professional",
+      organization: "PureID",
+      image: abhilashaImg,
+      linkedin: "https://www.linkedin.com/in/abhilasharvyas/",
     },
     {
       name: "Amit Kumar",
@@ -113,6 +114,14 @@ export const acd2025Data = {
       linkedin: "https://www.linkedin.com/in/anshika-tiwari05/",
     },
     {
+      name: "Dr. Biswajit Mohapatra",
+      title:
+        "Head of Customer Solutions and CIO Advisory, India and South Asia",
+      organization: "Amazon Web Services (AWS)",
+      image: biswajitMohapatraImg,
+      linkedin: "https://www.linkedin.com/in/biswajitmohapatra/",
+    },
+    {
       name: "Dimple Vaghela",
       title: "Co-Founder",
       organization: "CloudKida Pvt Ltd",
@@ -128,7 +137,7 @@ export const acd2025Data = {
     },
     {
       name: "Disha Babla",
-      title: "AWS Technical Instructor",
+      title: "Technology Account Manager",
       organization: "Amazon Web Services (AWS)",
       image: dishaBablaImg,
       linkedin: "https://www.linkedin.com/in/dishabablani/",
@@ -309,140 +318,129 @@ export const schedule = [
     title: "Registrations and Networking",
     track: "Main",
     speakers: [],
-    description: ""
+    description: "",
   },
   {
     time: "9:45 AM - 9:55 AM (GMT+05:30)",
     title: "Welcome Note",
     track: "Main",
-    speakers: [],
-    description: ""
+    speakers: [
+      { name: "Dipali Kulshrestha", image: dipaliKulshresthaImg },
+      { name: "Rajat Arora", image: rajatAroraImg },
+    ],
+    description: "",
   },
   {
-    time: "10:00 AM - 10:30 AM (GMT+05:30)",
+    time: "10:00 AM - 10:20 AM (GMT+05:30)",
     title: "From Coding to Community: Thriving in the AI era",
     track: "Main",
     speakers: [{ name: "Ridhima Kapoor", image: ridhimaKapoorImg }],
-    description: ""
+    description: "Community Keynote",
   },
   {
-    time: "10:35 AM - 11:05 AM (GMT+05:30)",
-    title: "Tech Keynote",
-    track: "Track 1",
-    speakers: [],
-    description: ""
+    time: "10:25 AM - 10:55 AM (GMT+05:30)",
+    title: "Technical Keynote",
+    track: "Main",
+    speakers: [{ name: "Dr. Biswajit Mohapatra", image: biswajitMohapatraImg }],
+    description: "",
   },
   {
-    time: "11:30 AM - 12:00 PM (GMT+05:30)",
+    time: "11:20 AM - 11:40 AM (GMT+05:30)",
+    title: "Transforming Enterprise Workloads with AWS Agentic AI",
+    track: "Main",
+    speakers: [{ name: "Mayank Singh", image: mayankSinghImg }],
+    description:
+      "Explore how organizations can leverage AWS's Agentic AI to revolutionize operations using foundation models through Amazon Bedrock and other tools to automate complex workflows and enhance decision-making.",
+  },
+  {
+    time: "11:40 AM - 12:10 PM (GMT+05:30)",
     title: "TBD (will be updating soon…)",
-    track: "Track 1",
+    track: "Main",
     speakers: [
-      { name: "Eshika Mahajan", image: eshikaMahajanImg },
-      { name: "Akanksha Rai Sharma", image: akanshaRaiSharmaImg }
+      { name: "Nilesh Vaghela", image: nileshVaghelaImg },
+      { name: "Dimple Vaghela", image: dimpleVaghelaImg },
     ],
-    description: ""
+    description: "",
   },
   {
-    time: "12:05 PM - 12:35 PM (GMT+05:30)",
-    title: "AWS Transform for VMware Workload",
-    track: "Track 1",
-    speakers: [{ name: "Toshal Khawale", image: toshalKhawaleImg }],
-    description: ""
+    time: "12:15 PM - 12:45 PM (GMT+05:30)",
+    title: "TBD (will be updating soon…)",
+    track: "Main",
+    speakers: [{ name: "Annie Mattoo", image: annieImg }],
+    description: "",
   },
   {
-    time: "12:35 PM - 1:30 PM (GMT+05:30)",
+    time: "12:45 PM - 1:20 PM (GMT+05:30)",
     title: "Lunch Break",
     track: "Main",
     speakers: [],
-    description: ""
+    description: "",
   },
   {
-    time: "1:45 PM - 2:15 PM (GMT+05:30)",
-    title: "TBD (will be updating soon…)",
-    track: "Track 1",
-    speakers: [{ name: "Nilesh Vaghela", image: nileshVaghelaImg }],
-    description: ""
-  },
-  {
-    time: "2:20 PM - 2:50 PM (GMT+05:30)",
-    title: "Amazon Bedrock AgentCore: Building Enterprise-Grade AI Agents at Scale",
-    track: "Track 1",
-    speakers: [{ name: "Amit Kumar", image: amitKumarImg }],
+    time: "1:20 PM - 1:30 PM (GMT+05:30)",
+    title:
+      "MDBot: Emotionally Intelligent AI for Women Empowerment - Powered by AWS Bedrock",
+    track: "Main",
+    speakers: [{ name: "Sundus Hussain", image: sundusHussainImg }],
     description:
-      "This session explores AgentCore's fully-managed services including Runtime, Gateway, Memory, Identity, and Observability components that work with any framework (CrewAI, LangGraph, LlamaIndex) and foundation model. Learn how enterprises achieve production-ready agent deployments with complete session isolation, 8-hour runtime support, and zero infrastructure management while maintaining enterprise-grade security and reliability."
+      "MDBot is an AI-powered bot designed for women's emotional wellness, using Amazon Bedrock and Polly to provide empathetic support and emotional tracking for mothers, students, and professionals.",
   },
   {
-    time: "2:55 PM - 3:30 PM (GMT+05:30)",
-    title: "Responsible AI: From Theory to Practice",
-    track: "Track 1",
-    speakers: [{ name: "Disha Babla", image: dishaBablaImg }],
-    description: ""
+    time: "1:40 PM - 2:30 PM (GMT+05:30)",
+    title: "Panel Discussion",
+    track: "Main",
+    speakers: [
+      { name: "Eshika Mahajan", image: eshikaMahajanImg },
+      { name: "Amit Kumar", image: amitKumarImg },
+      { name: "Disha Babla", image: dishaBablaImg },
+      { name: "Dr. Abhilasha Rakesh Vyas", image: abhilashaImg },
+    ],
+    description:
+      "Panel Discussion moderated by Eshika Mahajan featuring industry experts",
   },
   {
-    time: "3:50 PM - 4:10 PM (GMT+05:30)",
+    time: "2:50 PM - 3:20 PM (GMT+05:30)",
+    title: "AWS Transform for VMware Workload",
+    track: "Main",
+    speakers: [{ name: "Toshal Khawale", image: toshalKhawaleImg }],
+    description: "",
+  },
+  {
+    time: "3:25 PM - 3:55 PM (GMT+05:30)",
+    title: "AWS Amplify - From code to cloud in minutes",
+    track: "Main",
+    speakers: [
+      { name: "Vridhi Duggal", image: vridhiDuggalImg },
+      { name: "Sumit Grover", image: sumitGroverImg },
+    ],
+    description:
+      "AWS Amplify is a full-stack development platform that lets developers write infrastructure as TypeScript code and deploy complete applications to AWS in minutes using Git-based CI/CD automation. It eliminates traditional DevOps complexity by handling provisioning, scaling, and infrastructure management automatically, enabling teams to focus on building features rather than managing cloud infrastructure.",
+  },
+  {
+    time: "4:00 PM - 4:30 PM (GMT+05:30)",
+    title: "Where AI Meets Observability: Scaling Smarter with AWS OpenSearch",
+    track: "Main",
+    speakers: [
+      { name: "Aditya Soni", image: adityaSoniImg },
+      { name: "Anshika Tiwari", image: anshikaTiwariImg },
+    ],
+    description:
+      "This session shows how AI-driven OpenSearch transforms observability by turning logs, metrics, and traces into actionable insights. Learn to detect anomalies in real time and scale your observability pipeline efficiently.",
+  },
+  {
+    time: "4:40 PM - 4:55 PM (GMT+05:30)",
     title: "Closing Note",
     track: "Main",
     speakers: [],
-    description: ""
+    description: "",
   },
   {
-    time: "4:15 PM - 5:00 PM (GMT+05:30)",
+    time: "5:00 PM - 5:30 PM (GMT+05:30)",
     title: "Hi Tea, Networking & Swags Distribution",
     track: "Main",
     speakers: [],
-    description: ""
+    description: "",
   },
-  {
-    time: "11:30 AM - 12:00 PM (GMT+05:30)",
-    title: "Where AI Meets Observability: Scaling Smarter with AWS OpenSearch",
-    track: "Track 2",
-    speakers: [
-      { name: "Aditya Soni", image: adityaSoniImg },
-      { name: "Anshika Tiwari", image: anshikaTiwariImg }
-    ],
-    description:
-      "This session shows how AI-driven OpenSearch transforms observability by turning logs, metrics, and traces into actionable insights. Learn to detect anomalies in real time and scale your observability pipeline efficiently."
-  },
-  {
-    time: "12:05 PM - 12:35 PM (GMT+05:30)",
-    title: "Transforming Enterprise Workloads with AWS Agentic AI",
-    track: "Track 2",
-    speakers: [{ name: "Mayank Singh", image: mayankSinghImg }],
-    description:
-      "Explore how organizations can leverage AWS's Agentic AI to revolutionize operations using foundation models through Amazon Bedrock and other tools to automate complex workflows and enhance decision-making."
-  },
-  {
-    time: "1:30 PM - 1:40 PM (GMT+05:30)",
-    title: "MDBot: Emotionally Intelligent AI for Women Empowerment - Powered by AWS Bedrock",
-    track: "Track 2",
-    speakers: [{ name: "Sundus Hussain", image: sundusHussainImg }],
-    description:
-      "MDBot is an AI-powered bot designed for women's emotional wellness, using Amazon Bedrock and Polly to provide empathetic support and emotional tracking for mothers, students, and professionals."
-  },
-  {
-    time: "1:45 PM - 2:15 PM (GMT+05:30)",
-    title: "AWS Amplify - From code to cloud in minutes",
-    track: "Track 2",
-    speakers: [
-      { name: "Vridhi Duggal", image: vridhiDuggalImg },
-      { name: "Sumit Grover", image: sumitGroverImg }
-    ],
-    description: "AWS Amplify is a full-stack development platform that lets developers write infrastructure as TypeScript code and deploy complete applications to AWS in minutes using Git-based CI/CD automation. It eliminates traditional DevOps complexity by handling provisioning, scaling, and infrastructure management automatically, enabling teams to focus on building features rather than managing cloud infrastructure."
-  },
-  {
-    time: "2:20 PM - 2:50 PM (GMT+05:30)",
-    title: "TBD (will be updating soon…)",
-    track: "Track 2",
-    speakers: [{ name: "Dimple Vaghela", image: dimpleVaghelaImg }],
-    description: ""
-  },
-  {
-    time: "2:55 PM - 3:30 PM (GMT+05:30)",
-    title: "TBD (will be updating soon…)",
-    track: "Track 2",
-    speakers: [{ name: "Annie Mattoo", image: annieImg }],
-    description: ""
-  }
 ];
 
 export default acd2025Data;

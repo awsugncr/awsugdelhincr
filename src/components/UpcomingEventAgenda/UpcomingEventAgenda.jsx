@@ -1,11 +1,8 @@
 import { schedule } from "../../data/acd2025";
 import placeholderImg from "../../assets/speakers/Placeholder.png";
 import styles from "./UpcomingEventAgenda.module.css";
-import { useState } from "react";
 
 const UpcomingEventAgenda = () => {
-  const [activeTab, setActiveTab] = useState("All");
-
   const sortedSessions = [...schedule].sort((a, b) => {
     const getHour = (timeStr) => {
       const match = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/);
@@ -19,28 +16,6 @@ const UpcomingEventAgenda = () => {
     return getHour(a.time) - getHour(b.time);
   });
 
-  const filteredSessions = sortedSessions.filter((session) => {
-    if (activeTab === "All") return true;
-    if (activeTab === "Track 1") return session.track === "Track 1";
-    if (activeTab === "Track 2") return session.track === "Track 2";
-    return true;
-  });
-
-  const getTrackColor = (track) => {
-    switch (track) {
-      case "Main":
-        return "var(--color-accent)";
-      case "Track 1":
-        return "var(--color-accent-2)";
-      case "Track 2":
-        return "#10B981";
-      default:
-        return "var(--color-accent)";
-    }
-  };
-
-  const tabs = ["All", "Track 1", "Track 2"];
-
   return (
     <section id="agenda" className={styles.agendaSection}>
       <div className={styles.container}>
@@ -53,31 +28,14 @@ const UpcomingEventAgenda = () => {
           </h2>
         </div>
 
-        <div className={styles.tabsContainer}>
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              className={`${styles.tab} ${
-                activeTab === tab ? styles.activeTab : ""
-              }`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
         <div className={styles.timeline}>
-          {filteredSessions.map((session, index) => (
+          {sortedSessions.map((session, index) => (
             <div
               key={`${session.time}-${index}`}
               className={styles.timelineItem}
             >
               <div className={styles.timelineMarker}>
-                <div
-                  className={styles.marker}
-                  style={{ backgroundColor: getTrackColor(session.track) }}
-                />
+                <div className={styles.marker} />
                 <div className={styles.timeInfo}>
                   <div className={styles.timeSlot}>
                     {session.time.split(" - ")[0]}
@@ -93,15 +51,6 @@ const UpcomingEventAgenda = () => {
               <div className={styles.sessionContainer}>
                 <div className={styles.sessionHeader}>
                   <h3 className={styles.sessionTitle}>{session.title}</h3>
-                  <span
-                    className={styles.trackBadge}
-                    style={{
-                      backgroundColor: getTrackColor(session.track),
-                      color: "white",
-                    }}
-                  >
-                    {session.track}
-                  </span>
                 </div>
 
                 {session.description && (
