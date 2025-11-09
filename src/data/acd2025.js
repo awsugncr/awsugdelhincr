@@ -1,11 +1,12 @@
 import awsLogo from "../assets/sponsors/aws.png";
 
 // Import speaker images for ACD 2025 final speakers
+import abhilashaImg from "../assets/speakers/Dr._Abhilasha_Rakesh_Vyas.jpg";
 import adityaSoniImg from "../assets/speakers/Aditya_Soni.jpg";
 import amitKumarImg from "../assets/speakers/Amit_Kumar.jpg";
 import annieImg from "../assets/speakers/Annie_Mattoo.png";
 import anshikaTiwariImg from "../assets/speakers/Anshika_Tiwari.png";
-import ashutoshImg from "../assets/speakers/Ashutosh_Bhakare.png";
+import biswajitMohapatraImg from "../assets/speakers/Dr_Biswajit_Mohapatra.jpg";
 import dimpleVaghelaImg from "../assets/speakers/Dimple_Vaghela.jpg";
 import dipaliKulshresthaImg from "../assets/speakers/Dipali_Kulshrestha.jpg";
 import dishaBablaImg from "../assets/speakers/Disha_Babla.jpg";
@@ -36,9 +37,9 @@ export const acd2025Data = {
   eventDetails: {
     type: "Community Day",
     organizer: "AWS User Group Delhi NCR",
-    attendees: "500+",
-    sessions: "TBA",
-    speakers: "TBA",
+    attendees: "300+",
+    sessions: "11+",
+    speakers: "15+",
     status: "upcoming",
     time: "9:00 AM - 5:30 PM",
     duration: "Full Day",
@@ -82,7 +83,14 @@ export const acd2025Data = {
       title: "DevOps Engineer II",
       organization: "Forrester",
       image: adityaSoniImg,
-      linkedin: "https://www.linkedin.com/in/adityasonicodes/",
+      linkedin: "https://www.linkedin.com/in/adityasonittyl/",
+    },
+    {
+      name: "Dr. Abhilasha Rakesh Vyas",
+      title: "Cloud Security Professional",
+      organization: "PureID",
+      image: abhilashaImg,
+      linkedin: "https://www.linkedin.com/in/abhilasharvyas/",
     },
     {
       name: "Amit Kumar",
@@ -106,11 +114,12 @@ export const acd2025Data = {
       linkedin: "https://www.linkedin.com/in/anshika-tiwari05/",
     },
     {
-      name: "Ashutosh S. Bhakare",
-      title: "Chief Executive Officer",
-      organization: "Unnati Development and Training Centre Pvt Ltd",
-      image: ashutoshImg,
-      linkedin: "https://www.linkedin.com/in/abhakare/",
+      name: "Dr. Biswajit Mohapatra",
+      title:
+        "Head of Customer Solutions and CIO Advisory, India and South Asia",
+      organization: "Amazon Web Services (AWS)",
+      image: biswajitMohapatraImg,
+      linkedin: "https://www.linkedin.com/in/biswajitmohapatra/",
     },
     {
       name: "Dimple Vaghela",
@@ -124,11 +133,11 @@ export const acd2025Data = {
       title: "AWS UG NCR Lead",
       organization: "AWS User Group Delhi NCR",
       image: dipaliKulshresthaImg,
-      linkedin: "https://www.linkedin.com/in/dipali-kulshrestha/",
+      linkedin: "https://www.linkedin.com/in/dipalik/",
     },
     {
       name: "Disha Babla",
-      title: "AWS Technical Instructor",
+      title: "Technology Account Manager",
       organization: "Amazon Web Services (AWS)",
       image: dishaBablaImg,
       linkedin: "https://www.linkedin.com/in/dishabablani/",
@@ -138,14 +147,14 @@ export const acd2025Data = {
       title: "Associate AI ML Engineer",
       organization: "Optum",
       image: eshikaMahajanImg,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/eshikamahajan/",
     },
     {
       name: "Mayank Singh",
       title: "Sr. SAP Specialist Solutions Architect",
       organization: "Amazon Web Services (AWS)",
       image: mayankSinghImg,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/mpsingh18/",
     },
     {
       name: "Nilesh Vaghela",
@@ -159,7 +168,7 @@ export const acd2025Data = {
       title: "AWS UG NCR Lead",
       organization: "AWS User Group Delhi NCR",
       image: rajatAroraImg,
-      linkedin: "https://www.linkedin.com/in/rajataroraworkzone/",
+      linkedin: "https://www.linkedin.com/in/arora-rajat-cw/",
     },
     {
       name: "Ridhima Kapoor",
@@ -238,12 +247,12 @@ export const acd2025Data = {
   // Registration information
   registration: {
     isOpen: true,
-    url: "https://www.meetup.com/amazonaws-delhi/events/311761403/",
+    url: "https://konfhub.com/acd-delhi-2025",
     earlyBird: {
-      available: true,
+      available: false,
       price: "₹1,099",
       originalPrice: "₹1,299",
-      deadline: "Limited Time Offer",
+      deadline: "Sold Out",
       features: [
         "Access to all sessions & Workshops",
         "Welcome Kit",
@@ -287,7 +296,7 @@ export const acd2025Data = {
       lat: 28.5458541,
       lng: 77.2731762,
     },
-    capacity: "500+",
+    capacity: "300+",
     facilities: [
       "High-speed Wi-Fi",
       "Audio/Visual Equipment",
@@ -301,5 +310,137 @@ export const acd2025Data = {
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7958915123895!2d77.2731762!3d28.5458541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIndraprastha%20Institute%20of%20Information%20Technology%20Delhi!5e0!3m2!1sen!2sin!4v1761834224195!5m2!1sen!2sin",
 };
+
+// Event Schedule/Agenda
+export const schedule = [
+  {
+    time: "8:30 AM - 9:30 AM (GMT+05:30)",
+    title: "Registrations and Networking",
+    track: "Main",
+    speakers: [],
+    description: "",
+  },
+  {
+    time: "9:45 AM - 9:55 AM (GMT+05:30)",
+    title: "Welcome Note",
+    track: "Main",
+    speakers: [
+      { name: "Dipali Kulshrestha", image: dipaliKulshresthaImg },
+      { name: "Rajat Arora", image: rajatAroraImg },
+    ],
+    description: "",
+  },
+  {
+    time: "10:00 AM - 10:20 AM (GMT+05:30)",
+    title: "From Coding to Community: Thriving in the AI era",
+    track: "Main",
+    speakers: [{ name: "Ridhima Kapoor", image: ridhimaKapoorImg }],
+    description: "Community Keynote",
+  },
+  {
+    time: "10:25 AM - 10:55 AM (GMT+05:30)",
+    title: "Technical Keynote",
+    track: "Main",
+    speakers: [{ name: "Dr. Biswajit Mohapatra", image: biswajitMohapatraImg }],
+    description: "",
+  },
+  {
+    time: "11:20 AM - 11:40 AM (GMT+05:30)",
+    title: "Transforming Enterprise Workloads with AWS Agentic AI",
+    track: "Main",
+    speakers: [{ name: "Mayank Singh", image: mayankSinghImg }],
+    description:
+      "Explore how organizations can leverage AWS's Agentic AI to revolutionize operations using foundation models through Amazon Bedrock and other tools to automate complex workflows and enhance decision-making.",
+  },
+  {
+    time: "11:40 AM - 12:10 PM (GMT+05:30)",
+    title: "TBD (will be updating soon…)",
+    track: "Main",
+    speakers: [
+      { name: "Nilesh Vaghela", image: nileshVaghelaImg },
+      { name: "Dimple Vaghela", image: dimpleVaghelaImg },
+    ],
+    description: "",
+  },
+  {
+    time: "12:15 PM - 12:45 PM (GMT+05:30)",
+    title: "TBD (will be updating soon…)",
+    track: "Main",
+    speakers: [{ name: "Annie Mattoo", image: annieImg }],
+    description: "",
+  },
+  {
+    time: "12:45 PM - 1:20 PM (GMT+05:30)",
+    title: "Lunch Break",
+    track: "Main",
+    speakers: [],
+    description: "",
+  },
+  {
+    time: "1:20 PM - 1:30 PM (GMT+05:30)",
+    title:
+      "MDBot: Emotionally Intelligent AI for Women Empowerment - Powered by AWS Bedrock",
+    track: "Main",
+    speakers: [{ name: "Sundus Hussain", image: sundusHussainImg }],
+    description:
+      "MDBot is an AI-powered bot designed for women's emotional wellness, using Amazon Bedrock and Polly to provide empathetic support and emotional tracking for mothers, students, and professionals.",
+  },
+  {
+    time: "1:40 PM - 2:30 PM (GMT+05:30)",
+    title: "Panel Discussion",
+    track: "Main",
+    speakers: [
+      { name: "Eshika Mahajan", image: eshikaMahajanImg },
+      { name: "Amit Kumar", image: amitKumarImg },
+      { name: "Disha Babla", image: dishaBablaImg },
+      { name: "Dr. Abhilasha Rakesh Vyas", image: abhilashaImg },
+    ],
+    description:
+      "Panel Discussion moderated by Eshika Mahajan featuring industry experts",
+  },
+  {
+    time: "2:50 PM - 3:20 PM (GMT+05:30)",
+    title: "AWS Transform for VMware Workload",
+    track: "Main",
+    speakers: [{ name: "Toshal Khawale", image: toshalKhawaleImg }],
+    description: "",
+  },
+  {
+    time: "3:25 PM - 3:55 PM (GMT+05:30)",
+    title: "AWS Amplify - From code to cloud in minutes",
+    track: "Main",
+    speakers: [
+      { name: "Vridhi Duggal", image: vridhiDuggalImg },
+      { name: "Sumit Grover", image: sumitGroverImg },
+    ],
+    description:
+      "AWS Amplify is a full-stack development platform that lets developers write infrastructure as TypeScript code and deploy complete applications to AWS in minutes using Git-based CI/CD automation. It eliminates traditional DevOps complexity by handling provisioning, scaling, and infrastructure management automatically, enabling teams to focus on building features rather than managing cloud infrastructure.",
+  },
+  {
+    time: "4:00 PM - 4:30 PM (GMT+05:30)",
+    title: "Where AI Meets Observability: Scaling Smarter with AWS OpenSearch",
+    track: "Main",
+    speakers: [
+      { name: "Aditya Soni", image: adityaSoniImg },
+      { name: "Anshika Tiwari", image: anshikaTiwariImg },
+    ],
+    description:
+      "This session shows how AI-driven OpenSearch transforms observability by turning logs, metrics, and traces into actionable insights. Learn to detect anomalies in real time and scale your observability pipeline efficiently.",
+  },
+  {
+    time: "4:40 PM - 4:55 PM (GMT+05:30)",
+    title: "Closing Note",
+    track: "Main",
+    speakers: [],
+    description: "",
+  },
+  {
+    time: "5:00 PM - 5:30 PM (GMT+05:30)",
+    title: "Hi Tea, Networking & Swags Distribution",
+    track: "Main",
+    speakers: [],
+    description: "",
+  },
+];
 
 export default acd2025Data;

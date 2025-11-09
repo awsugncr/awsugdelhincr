@@ -30,7 +30,12 @@ const UpcomingEventPopup = ({ eventData, isVisible, onClose }) => {
   };
 
   const handleRegisterClick = () => {
-    document.getElementById("register")?.scrollIntoView({ behavior: "smooth" });
+    const registrationUrl = eventData?.registration?.url;
+    if (registrationUrl) {
+      window.open(registrationUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      document.getElementById("register")?.scrollIntoView({ behavior: "smooth" });
+    }
     handleClose();
   };
 
@@ -128,6 +133,9 @@ UpcomingEventPopup.propTypes = {
     }),
     eventDetails: PropTypes.shape({
       time: PropTypes.string,
+    }),
+    registration: PropTypes.shape({
+      url: PropTypes.string,
     }),
   }),
   isVisible: PropTypes.bool.isRequired,
