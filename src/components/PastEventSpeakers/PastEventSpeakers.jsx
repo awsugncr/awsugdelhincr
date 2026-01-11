@@ -13,7 +13,7 @@ const PastEventSpeakers = ({ eventData }) => {
   );
 
   return (
-    <section className={styles.speakersSection}>
+    <section id="speakers" className={styles.speakersSection}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Meet Our Speakers</h2>

@@ -2,6 +2,7 @@ import PastEventHero from "../../components/PastEventHero/PastEventHero";
 import PastEventAbout from "../../components/PastEventAbout/PastEventAbout";
 import PastEventMarquee from "../../components/PastEventMarquee/PastEventMarquee";
 import PastEventSpeakers from "../../components/PastEventSpeakers/PastEventSpeakers";
+import PastEventVolunteers from "../../components/PastEventVolunteers/PastEventVolunteers";
 import PastEventHighlight from "../../components/PastEventHighlight/PastEventHighlight";
 import PastEventSponsors from "../../components/PastEventSponsors/PastEventSponsors";
 import PastEventLookingAhead from "../../components/PastEventLookingAhead/PastEventLookingAhead";
@@ -17,6 +18,7 @@ const CompletedEvents = ({ eventData }) => {
       <PastEventMarquee eventData={eventData} />
       <PastEventAbout eventData={eventData} />
       <PastEventSpeakers eventData={eventData} />
+      <PastEventVolunteers eventData={eventData} />
       <PastEventHighlight eventData={eventData} />
       <PastEventSponsors eventData={eventData} />
       <PastEventLookingAhead eventData={eventData} />

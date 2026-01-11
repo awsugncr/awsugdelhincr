@@ -224,30 +224,6 @@ function HeroSection() {
               </motion.div>
             </Link>
           </motion.div>
-
-          <motion.div
-            className={styles.registrationContainer}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.8, ease: "easeOut" }}
-          >
-            <a
-              href="https://konfhub.com/acd-delhi-2025"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.registrationButton}
-            >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className={styles.registrationContent}
-              >
-                <span className={styles.liveIndicator}>🔴</span>
-                ACD 2025 Registrations Live!
-              </motion.div>
-            </a>
-          </motion.div>
         </div>
 
         <div className={styles.wavesContainer}>

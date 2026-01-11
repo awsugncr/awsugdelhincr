@@ -17,10 +17,10 @@ import Loader from "./components/Loader/Loader";
 import CompletedEvents from "./pages/CompletedEvents/CompletedEvents";
 
 import Portfolio from "./pages/dipalik/Portfolio";
-import UpcomingEvents from "./pages/UpcomingEvents/UpcomingEvents";
 import AgendaPage from "./pages/AgendaPage/AgendaPage";
 
 import { acd2024Data } from "./data/acd2024";
+import { acd2025Data } from "./data/acd2025";
 import { agenticAiAwsData } from "./data/agenticAIData";
 import { amazonQWorkshopData } from "./data/astuteDev";
 import { awsmeetupData } from "./data/awsmeetup";
@@ -69,7 +69,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/events" element={<AllEvents />} />
-        <Route path="/acd2025" element={<UpcomingEvents />} />
+        <Route
+          path="/acd2025"
+          element={<CompletedEvents eventData={acd2025Data} />}
+        />
         <Route path="/acd2025/agenda" element={<AgendaPage />} />
         <Route path="/sponsorship" element={<CFS />} />
         <Route path="/dipalik" element={<Portfolio />} />

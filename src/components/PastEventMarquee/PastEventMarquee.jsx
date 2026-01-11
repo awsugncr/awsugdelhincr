@@ -16,6 +16,7 @@ const PastEventMarquee = ({ eventData }) => {
 
   return (
     <motion.section
+      id="images"
       className={styles.marqueeSection}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

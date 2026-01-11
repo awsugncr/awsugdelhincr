@@ -1,4 +1,19 @@
 import awsLogo from "../assets/sponsors/aws.png";
+import esummitLogo from "../assets/sponsors/ESummit.jpg";
+
+// Import event images - Optimized WebP versions
+import aws1 from "../assets/events/ACD_2025_optimized/aws1.webp";
+import aws2 from "../assets/events/ACD_2025_optimized/aws2.webp";
+import aws3 from "../assets/events/ACD_2025_optimized/aws3.webp";
+import aws4 from "../assets/events/ACD_2025_optimized/aws4.webp";
+import aws5 from "../assets/events/ACD_2025_optimized/aws5.webp";
+import aws6 from "../assets/events/ACD_2025_optimized/aws6.webp";
+import aws7 from "../assets/events/ACD_2025_optimized/aws7.webp";
+import aws8 from "../assets/events/ACD_2025_optimized/aws8.webp";
+import aws9 from "../assets/events/ACD_2025_optimized/aws9.webp";
+import aws10 from "../assets/events/ACD_2025_optimized/aws10.webp";
+import aws11 from "../assets/events/ACD_2025_optimized/aws11.webp";
+import aws12 from "../assets/events/ACD_2025_optimized/aws12.webp";
 
 // Import speaker images for ACD 2025 final speakers
 import abhilashaImg from "../assets/speakers/Dr._Abhilasha_Rakesh_Vyas.jpg";
@@ -15,63 +30,98 @@ import mayankSinghImg from "../assets/speakers/Mayank_Singh.jpg";
 import nileshVaghelaImg from "../assets/speakers/Nilesh_Vaghela.jpg";
 import rajatAroraImg from "../assets/speakers/Rajat_Arora.jpeg";
 import ridhimaKapoorImg from "../assets/speakers/Ridhima_Kapoor.jpg";
-import sumitGroverImg from "../assets/speakers/Sumit_Grover.jpeg";
+import sumitGroverImg from "../assets/speakers/Sumit_Grover.jpg";
 import sundusHussainImg from "../assets/speakers/Sundus_Hussain.jpg";
 import toshalKhawaleImg from "../assets/speakers/Toshal_Khawale.jpg";
 import vridhiDuggalImg from "../assets/speakers/Vridhi_Duggal.jpeg";
 
-// ACD 2025 Event Data (Upcoming Event)
+// Import volunteer images for ACD 2025
+import alokKumarImg from "../assets/volunteers/acd2025/Alok_Kumar.jpg";
+import amandeepBajwaImg from "../assets/volunteers/acd2025/Amandeep_Bajwa.jpg";
+import ananyaSrivastavaImg from "../assets/volunteers/acd2025/Ananya_Srivastava.jpg";
+import dheerajSahImg from "../assets/volunteers/acd2025/Dheeraj_Kumar_Shah.jpg";
+import dikshaVermaImg from "../assets/volunteers/acd2025/Diksha_Verma.jpg";
+import dipaliVolunteerImg from "../assets/volunteers/acd2025/Dipali_Kulshrestha.jpg";
+import kunjGuptaImg from "../assets/volunteers/acd2025/Kunj_Gupta.jpg";
+import neerajChourishiyaImg from "../assets/volunteers/acd2025/Neeraj_Chourishiya.jpg";
+import pranavSharmaImg from "../assets/volunteers/acd2025/Pranav_Sharma.jpg";
+import rajatVolunteerImg from "../assets/volunteers/acd2025/Rajat_Arora.jpeg";
+import rishabhSinghImg from "../assets/volunteers/acd2025/Rishabh_Pratap_Singh.jpg";
+import saatwikMehtaImg from "../assets/volunteers/acd2025/Saatwik_Mehta.jpg";
+import shekharThatheraImg from "../assets/volunteers/acd2025/Shekhar_Thathera.jpg";
+import shikharSinghImg from "../assets/volunteers/acd2025/Shikhar_Singh.jpg";
+import shishirSrivastavImg from "../assets/volunteers/acd2025/Shishir_Srivastav.jpg";
+import sumitVolunteerImg from "../assets/volunteers/acd2025/Sumit_Grover.jpg";
+import uditiGuptaImg from "../assets/volunteers/acd2025/Uditi_Gupta.jpg";
+import ujjwalAgarwalImg from "../assets/volunteers/acd2025/Ujjwal_Aggarwal.jpg";
+import unsaFatimaImg from "../assets/volunteers/acd2025/Unsa_Fatima.jpeg";
+import vridhiVolunteerImg from "../assets/volunteers/acd2025/Vridhi_Duggal.jpeg";
+import yashanshSrivastavaImg from "../assets/volunteers/acd2025/Yashansh_Srivastava.jpg";
+
+// ACD 2025 Event Data (Past Event)
 export const acd2025Data = {
   // Hero Section Data
   title: "AWS Community Day Delhi NCR 2025",
-  date: "16 November 2025",
-  day: "Sunday",
+  date: "November 16, 2025",
   venue: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)",
   description: [
-    "Join us for the biggest AWS community gathering in Delhi NCR this November!",
-    "Connect, learn, and innovate with cloud enthusiasts and industry leaders.",
-    "Mark your calendar for November 16th, 2025 at IIIT Delhi.",
+    "AWS Community Day Delhi NCR 2025 brought together over 300 cloud enthusiasts, developers, and industry leaders for a day of learning and innovation.",
+    "The event featured technical sessions, hands-on workshops, and networking opportunities, making it one of the region's most impactful AWS community gatherings.",
   ],
+
+  // Images for marquee
+  images: {
+    imagePaths: [
+      aws1,
+      aws2,
+      aws3,
+      aws4,
+      aws5,
+      aws6,
+      aws7,
+      aws8,
+      aws9,
+      aws10,
+      aws11,
+      aws12,
+    ],
+  },
 
   // Event Details
   eventDetails: {
     type: "Community Day",
     organizer: "AWS User Group Delhi NCR",
     attendees: "300+",
-    sessions: "11+",
-    speakers: "15+",
-    status: "upcoming",
-    time: "9:00 AM - 5:30 PM",
-    duration: "Full Day",
-    entry: "Valid Ticket Only",
-    distanceFromMetro: "15 min walk",
+    sessions: "11",
+    speakers: "18",
+    status: "completed",
   },
 
   // About sections for the event
   aboutSections: [
     {
-      title: "WHO SHOULD ATTEND",
+      title: "WHO ATTENDED",
       content: [
-        "AWS Community Day Delhi NCR 2025 is designed for developers, architects, cloud enthusiasts, IT professionals, students, and business leaders passionate about AWS technologies.",
-        "Whether you're a beginner taking your first steps into cloud computing or a seasoned expert looking to stay updated with the latest trends, this event is for you.",
-        "Join hundreds of like-minded professionals to learn, network, and grow together in the AWS ecosystem.",
+        "AWS Community Day Delhi NCR 2025 brought together developers, architects, cloud enthusiasts, IT professionals, students, and business leaders from across the region.",
+        "Over 300 participants ranging from beginners taking their first steps into cloud computing to seasoned experts shared knowledge and experiences.",
+        "The diverse audience created an enriching environment for learning, networking, and collaboration within the AWS ecosystem.",
       ],
     },
     {
-      title: "WHAT TO EXPECT",
+      title: "THE EVENT",
       content: [
-        "Get ready for a day packed with immersive workshops, deep-dive technical sessions, and hands-on learning experiences.",
-        "Learn from industry experts, AWS heroes, and community leaders about the latest AWS services, best practices, and innovative use cases.",
-        "Network with fellow cloud enthusiasts, discover new opportunities, and be part of the vibrant AWS community in Delhi NCR.",
+        "The day was packed with immersive workshops, deep-dive technical sessions, and hands-on learning experiences led by industry experts and AWS community leaders.",
+        "Attendees explored the latest AWS services including Agentic AI, Amazon Bedrock, AWS OpenSearch, and AWS Amplify through practical demonstrations and real-world use cases.",
+        "A highlight was the panel discussion featuring industry experts discussing career growth and technology trends in the cloud computing space.",
       ],
     },
     {
-      title: "WHY ATTEND",
+      title: "WHY IT MATTERED",
       content: [
-        "Stay ahead of the curve with insights into the latest AWS technologies and industry trends.",
-        "Gain practical knowledge that you can immediately apply in your projects and career.",
-        "Build meaningful connections with peers, mentors, and potential collaborators in the cloud computing space.",
-        "Experience the power of community-driven learning and contribute to the growing AWS ecosystem.",
+        "The event provided cutting-edge insights into AWS technologies and industry trends, helping attendees stay ahead in their cloud journey.",
+        "Participants gained practical knowledge that could be immediately applied in their projects and careers.",
+        "Meaningful connections were built among peers, mentors, and collaborators, strengthening the AWS community in Delhi NCR.",
+        "The event showcased the power of community-driven learning and innovation in the cloud computing ecosystem.",
       ],
     },
   ],
@@ -207,6 +257,115 @@ export const acd2025Data = {
     },
   ],
 
+  // Volunteers data - ACD 2025 Volunteers
+  volunteers: [
+    {
+      name: "Alok Kumar",
+      image: alokKumarImg,
+      linkedin: "https://www.linkedin.com/in/imalokkumar/",
+    },
+    {
+      name: "Amandeep Singh Bajwa",
+      image: amandeepBajwaImg,
+      linkedin: "https://www.linkedin.com/in/amandeep-singh-bajwa/",
+    },
+    {
+      name: "Ananya Srivastava",
+      image: ananyaSrivastavaImg,
+      linkedin: "https://www.linkedin.com/in/itsmeananyasrivastava/",
+    },
+    {
+      name: "Dheeraj Kumar Sah",
+      image: dheerajSahImg,
+      linkedin: "https://www.linkedin.com/in/dheeraj-kumar-sah-692887249/",
+    },
+    {
+      name: "Diksha Verma",
+      image: dikshaVermaImg,
+      linkedin: "https://www.linkedin.com/in/dikshaverma01428/",
+    },
+    {
+      name: "Dipali Kulshrestha",
+      image: dipaliVolunteerImg,
+      linkedin: "https://www.linkedin.com/in/dipalik/",
+    },
+    {
+      name: "Kunj Gupta",
+      image: kunjGuptaImg,
+      linkedin: "https://www.linkedin.com/in/kunj-gupta-633251296/",
+    },
+    {
+      name: "Neeraj Chourishiya",
+      image: neerajChourishiyaImg,
+      linkedin: "https://www.linkedin.com/in/neeraj-chourishiya-04b20189/",
+    },
+    {
+      name: "Pranav Sharma",
+      image: pranavSharmaImg,
+      linkedin: "https://www.linkedin.com/in/hackwithpranav/",
+    },
+    {
+      name: "Rajat Arora",
+      image: rajatVolunteerImg,
+      linkedin: "https://www.linkedin.com/in/arora-rajat-cw/",
+    },
+    {
+      name: "Rishabh Pratap Singh",
+      image: rishabhSinghImg,
+      linkedin: "https://www.linkedin.com/in/rpsinfraops/",
+    },
+    {
+      name: "Saatwik Mehta",
+      image: saatwikMehtaImg,
+      linkedin: "https://www.linkedin.com/in/saatwikmehta/",
+    },
+    {
+      name: "Shekhar Thathera",
+      image: shekharThatheraImg,
+      linkedin: "https://www.linkedin.com/in/shekharthathera/",
+    },
+    {
+      name: "Shikhar Singh",
+      image: shikharSinghImg,
+      linkedin: "https://www.linkedin.com/in/shikharsingh0712/",
+    },
+    {
+      name: "Shishir Srivastav",
+      image: shishirSrivastavImg,
+      linkedin: "https://www.linkedin.com/in/shishir-srivastav/",
+    },
+    {
+      name: "Sumit Grover",
+      image: sumitVolunteerImg,
+      linkedin: "https://www.linkedin.com/in/sumit-grover-29a277256/",
+    },
+    {
+      name: "Uditi Gupta",
+      image: uditiGuptaImg,
+      linkedin: "https://www.linkedin.com/in/uditi-gupta-33b92435b/",
+    },
+    {
+      name: "Ujjwal Agarwal",
+      image: ujjwalAgarwalImg,
+      linkedin: "https://www.linkedin.com/in/ujjwal-agarwal-67b6a0323/",
+    },
+    {
+      name: "Unsa Fatima",
+      image: unsaFatimaImg,
+      linkedin: "https://www.linkedin.com/in/unsafatima/",
+    },
+    {
+      name: "Vridhi Duggal",
+      image: vridhiVolunteerImg,
+      linkedin: "https://www.linkedin.com/in/vridhi-duggal-060682275/",
+    },
+    {
+      name: "Yashansh Srivastava",
+      image: yashanshSrivastavaImg,
+      linkedin: "http://linkedin.com/in/yashansh-srivastava-965427235/",
+    },
+  ],
+
   // Event highlight words for marquee (used by PastEventHighlight component)
   highlightWords: [
     "INNOVATION",
@@ -214,7 +373,7 @@ export const acd2025Data = {
     "CLOUD",
     "NETWORKING",
     "LEARNING",
-    "UPCOMING",
+    "SUCCESS",
   ],
 
   // Event sponsors (used by PastEventSponsors component)
@@ -231,84 +390,24 @@ export const acd2025Data = {
     gold: [],
     silver: [],
     bronze: [],
-    community: [],
+    community: [
+      {
+        name: "E-Summit IIIT-Delhi",
+        logo: esummitLogo,
+        website: "https://www.instagram.com/esummit_iiitd",
+      },
+    ],
   },
 
   // Looking Ahead / Community Section
   community: {
-    heading: "Join the AWS Community",
+    heading: "Stay Connected",
     subheading:
-      "Be part of Delhi NCR's most vibrant cloud community and get early access to event updates.",
+      "Join Delhi NCR's most vibrant AWS community for future events and updates.",
     description:
-      "Connect with fellow cloud enthusiasts, stay updated with the latest announcements, and be the first to register when tickets go live.",
+      "Connect with fellow cloud enthusiasts, stay updated with upcoming meetups, workshops, and be part of our growing community.",
     meetupUrl: "https://www.meetup.com/amazonaws-delhi/",
   },
-
-  // Registration information
-  registration: {
-    isOpen: true,
-    url: "https://konfhub.com/acd-delhi-2025",
-    earlyBird: {
-      available: false,
-      price: "₹1,099",
-      originalPrice: "₹1,299",
-      deadline: "Sold Out",
-      features: [
-        "Access to all sessions & Workshops",
-        "Welcome Kit",
-        "Morning tea",
-        "Afternoon lunch",
-        "Evening hi-tea",
-        "Eligible to participate in games & quiz on event day",
-        "Tech Expo booth visit",
-        "Networking with fellow cloud enthusiasts",
-        "A chance to learn from AWS experts",
-        "And much more!",
-      ],
-    },
-    regular: {
-      available: true,
-      price: "₹1,299",
-      features: [
-        "Access to all sessions",
-        "Welcome Kit",
-        "Morning tea",
-        "Afternoon lunch",
-        "Evening hi-tea",
-        "Eligible to participate in games & quiz on event day",
-        "Tech Expo booth visit",
-        "Networking with fellow cloud enthusiasts",
-        "A chance to learn from AWS experts",
-        "And much more!",
-      ],
-    },
-    waitlist: {
-      available: false,
-      description: "Join our waitlist to be notified when registration opens",
-    },
-  },
-
-  // Venue information
-  venueDetails: {
-    name: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)",
-    address: "IIIT Delhi, Okhla Phase III, New Delhi, Delhi 110020",
-    coordinates: {
-      lat: 28.5458541,
-      lng: 77.2731762,
-    },
-    capacity: "300+",
-    facilities: [
-      "High-speed Wi-Fi",
-      "Audio/Visual Equipment",
-      "Networking Areas",
-      "Refreshments",
-    ],
-    mapEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7958915123895!2d77.2731762!3d28.5458541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIndraprastha%20Institute%20of%20Information%20Technology%20Delhi!5e0!3m2!1sen!2sin!4v1761834224195!5m2!1sen!2sin",
-  },
-
-  mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7958915123895!2d77.2731762!3d28.5458541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIndraprastha%20Institute%20of%20Information%20Technology%20Delhi!5e0!3m2!1sen!2sin!4v1761834224195!5m2!1sen!2sin",
 };
 
 // Event Schedule/Agenda

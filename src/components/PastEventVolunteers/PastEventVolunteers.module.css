@@ -1,0 +1,219 @@
+/* PastEventVolunteers Component Styles - Modern Professional Design */
+
+.volunteersSection {
+  padding: 4rem 0;
+  background: var(--color-bg);
+  position: relative;
+}
+
+.volunteersSection .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.volunteersSection .sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.volunteersSection .sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.volunteersSection .sectionDescription {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Volunteers Grid - Compact horizontal cards */
+.volunteersSection .volunteersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  justify-content: center;
+}
+
+/* Volunteer Card - Simple horizontal pill design */
+.volunteersSection .volunteerCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(30, 35, 45, 0.5);
+  border-radius: 50px;
+  padding: 0.6rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.volunteersSection .volunteerCard:hover {
+  background: rgba(35, 42, 55, 0.7);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Container - Simple circular */
+.volunteersSection .imageContainer {
+  position: relative;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.volunteersSection .volunteerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Volunteer Badge - Hidden */
+.volunteersSection .volunteerBadge {
+  display: none;
+}
+
+/* Volunteer Info - Middle section */
+.volunteersSection .volunteerInfo {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.volunteersSection .volunteerName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 0 0 0.2rem 0;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Connect Link */
+.volunteersSection .connectLink {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.volunteersSection .connectLink:hover {
+  color: #ff6b00;
+  text-decoration: underline;
+}
+
+/* LinkedIn Icon - Right side of pill */
+.volunteersSection .linkedinIcon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0077b5;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+  margin-right: 0.2rem;
+}
+
+.volunteersSection .linkedinIcon:hover {
+  background: #005a8c;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .volunteersSection .volunteersGrid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteersSection .volunteersGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .volunteersSection {
+    padding: 3rem 0;
+  }
+
+  .volunteersSection .container {
+    padding: 0 1.5rem;
+  }
+
+  .volunteersSection .imageContainer {
+    width: 55px;
+    height: 55px;
+  }
+
+  .volunteersSection .linkedinIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .volunteersSection .volunteerName {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .volunteersSection .volunteersGrid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .volunteersSection .imageContainer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .volunteersSection .volunteerCard {
+    padding: 0.4rem;
+    gap: 0.6rem;
+  }
+
+  .volunteersSection .linkedinIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  .volunteersSection .volunteerName {
+    font-size: 0.8rem;
+  }
+}
