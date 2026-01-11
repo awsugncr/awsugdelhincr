@@ -81,6 +81,26 @@ function ContactSection() {
           <p className={styles.footerSubtext}>
             Building the future of cloud computing in Delhi NCR
           </p>
+          <p className={styles.developersCredit}>
+            Developed with ❤️ by{" "}
+            <a
+              href="https://www.linkedin.com/in/sumit-grover-29a277256/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.developerLink}
+            >
+              Sumit Grover
+            </a>
+            {" "}&amp;{" "}
+            <a
+              href="https://www.linkedin.com/in/vridhi-duggal-060682275/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.developerLink}
+            >
+              Vridhi Duggal
+            </a>
+          </p>
         </div>
       </div>
     </footer>

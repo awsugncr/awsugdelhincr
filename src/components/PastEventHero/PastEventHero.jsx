@@ -1,16 +1,8 @@
-import Dock from "../../ui/Dock/Dock";
-import {
-  FaImage,
-  FaInfoCircle,
-  FaUsers,
-  FaHandshake,
-  FaEnvelope,
-} from "react-icons/fa";
-
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import styles from "./PastEventHero.module.css";
 import Aurora from "../../ui/Aurora/Aurora.jsx";
+import PastEventDock from "../PastEventDock/PastEventDock";
 
 const PastEventHero = ({ eventData }) => {
   // Use event data or defaults
@@ -22,71 +14,9 @@ const PastEventHero = ({ eventData }) => {
     "Join developers, students, and professionals for an unforgettable experience.",
   ];
 
-  // Dock nav items
-  const dockItems = [
-    {
-      label: "Images",
-      icon: <FaImage />,
-      onClick: () =>
-        document
-          .getElementById("images")
-          ?.scrollIntoView({ behavior: "smooth" }),
-    },
-    {
-      label: "About",
-      icon: <FaInfoCircle />,
-      onClick: () =>
-        document
-          .getElementById("about")
-          ?.scrollIntoView({ behavior: "smooth" }),
-    },
-    {
-      label: "Speakers",
-      icon: <FaUsers />,
-      onClick: () =>
-        document
-          .getElementById("speakers")
-          ?.scrollIntoView({ behavior: "smooth" }),
-    },
-    {
-      label: "Sponsors",
-      icon: <FaHandshake />,
-      onClick: () =>
-        document
-          .getElementById("sponsors")
-          ?.scrollIntoView({ behavior: "smooth" }),
-    },
-    {
-      label: "Contact",
-      icon: <FaEnvelope />,
-      onClick: () =>
-        document
-          .getElementById("contact")
-          ?.scrollIntoView({ behavior: "smooth" }),
-    },
-  ];
-
   return (
     <>
-      <div
-        style={{
-          position: "fixed",
-          top: 20,
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 100,
-          width: "auto",
-        }}
-      >
-        <Dock
-          items={dockItems}
-          className="past-event-dock-navbar"
-          panelHeight={60}
-          dockHeight={120}
-          baseItemSize={40}
-          magnification={60}
-        />
-      </div>
+      <PastEventDock eventData={eventData} />
       <section className={styles.heroSection}>
         {/* Aurora Background Layer */}
         <div

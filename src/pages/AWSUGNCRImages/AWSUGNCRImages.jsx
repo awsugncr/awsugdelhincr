@@ -3,6 +3,12 @@ import Heading from "../../components/Heading/Heading";
 import styles from "./AWSUGNCRImages.module.css";
 
 // Import images from different event folders
+// ACD 2025 Events
+import acd2025_1 from "../../assets/events/ACD_2025_optimized/aws3.webp";
+import acd2025_2 from "../../assets/events/ACD_2025_optimized/aws5.webp";
+import acd2025_3 from "../../assets/events/ACD_2025_optimized/aws7.webp";
+import acd2025_4 from "../../assets/events/ACD_2025_optimized/aws9.webp";
+
 // ACD 2024 Events
 import acd1 from "../../assets/events/ACD 2024/image11.jpg";
 import acd2 from "../../assets/events/ACD 2024/image12.jpg";
@@ -45,9 +51,11 @@ import wit3 from "../../assets/events/wit_2025/aws2.jpg";
 
 // First marquee - Mix of different events
 const marqueeImages1 = [
+  { src: acd2025_1, alt: "AWS Community Day 2025 - Innovation & Learning" },
   { src: acd1, alt: "AWS Community Day 2024 - Event Highlights" },
   { src: meetup1, alt: "AWS Meetup - Community Gathering" },
   { src: innovate1, alt: "Innovate Faster Workshop - Learning Session" },
+  { src: acd2025_2, alt: "AWS Community Day 2025 - Networking Session" },
   { src: security1, alt: "Security Group Discussion - Expert Talk" },
   { src: astute1, alt: "Astute Development with Q - AI Workshop" },
   { src: gameday1, alt: "Game Day 2025 - Hands-on Challenge" },
@@ -62,9 +70,11 @@ const marqueeImages1 = [
 // Second marquee - Different mix for variety
 const marqueeImages2 = [
   { src: astute2, alt: "Astute Development - Q Developer Tools" },
+  { src: acd2025_3, alt: "AWS Community Day 2025 - Technical Sessions" },
   { src: gameday2, alt: "Game Day - Problem Solving" },
   { src: reinvent2, alt: "ReInvent Recap - Cloud Innovations" },
   { src: wit2, alt: "Women in Tech - Leadership Talk" },
+  { src: acd2025_4, alt: "AWS Community Day 2025 - Community Gathering" },
   { src: acd3, alt: "AWS Community Day - Technical Deep Dive" },
   { src: meetup3, alt: "AWS Meetup - Community Stories" },
   { src: innovate3, alt: "Innovate Faster - Startup Showcase" },

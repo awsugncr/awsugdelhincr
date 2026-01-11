@@ -7,7 +7,7 @@ import awsGamedayGenAI from "../assets/events/gameday_2025/aws8.jpg";
 import innovateFaster from "../assets/events/innovatefaster/1697304577122.jpg";
 import awsWIT2025 from "../assets/events/wit_2025/aws13.jpg";
 import awsAgenticAI from "../assets/events/Agentic_AI_with_AWS/aws1.jpg";
-import acd2025Poster from "../assets/events/ACD_2025/ACD_2025_POSTER.jpeg";
+import acd2025Image from "../assets/events/ACD_2025_optimized/aws1.webp";
 import awsReimaginingCLIProductivity from "../assets/events/Reimagining_CLI_Productivity/aws1.jpg";
 
 export const eventsData = [
@@ -17,9 +17,9 @@ export const eventsData = [
     date: "Sunday, November 16, 2025",
     time: "9:00 AM - 5:30 PM",
     venue: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)",
-    image: acd2025Poster,
+    image: acd2025Image,
     link: "/acd2025",
-    status: "upcoming",
+    status: "completed",
   },
   {
     id: 2,

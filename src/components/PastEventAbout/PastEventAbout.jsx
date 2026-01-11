@@ -6,7 +6,7 @@ const PastEventAbout = ({ eventData }) => {
   const sections = eventData?.aboutSections;
 
   return (
-    <section className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection}>
       <div className={styles.container}>
         {sections.map((section, index) => (
           <div key={index} className={styles.sectionWrapper}>
